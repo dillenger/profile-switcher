@@ -1,0 +1,49 @@
+Changelog for Profile Switcher
+
+3.0
+Supernova update, moved the toolbar button to the Tab Bar.
+The toolbar button can be hidden but not (yet) moved.
+Set minimum version to Thunderbird 111.0.
+Set maximum version to Thunderbird 117.*.
+
+2.8
+Updated WindowListener to v1.58.
+
+2.7
+Improved restarting with log (moz_log).
+
+2.6
+Fixed the button icon in the Customize Toolbar dialog.
+
+2.5
+Added support for Thunderbird 78 and beyond.
+Removed icon from Addressbook status bar.
+Fixed preferences dialog (icons, textbox, appearance)
+Fixed statusbar button not being removed when disabling the add-on.
+Fixed window not closing when switching profiles on Thunderbird 91.
+Fixed open about:profiles on Thunderbird 91.
+Fixed profile detection (profile list) on Thunderbird 91.
+Removed some obsolete Firefox & Address Book code.
+Fixed context menus for text boxes (input fields).
+
+2.4
+Changed the icon.
+Fixed the homepage.
+
+2.3
+Changed the name to Profile Switcher.
+Changed the icon.
+
+2.2
+Added a workaround for sometimes not showing the profile list.
+Disabled unreliable detection of the default profile.
+Fixed the toolbar button size & appearance.
+Added open about:profiles menu items.
+Moved all skin & icon related to /skin & /skin/icons.
+
+2.1
+Fixed toolbar & statusbar buttons.
+
+2.0
+First release, legacy WebExtension version of ProfileSwitcher.
+Changed the name to ProfileSwitcher2.

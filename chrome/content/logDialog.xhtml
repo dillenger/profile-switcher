@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "chrome://profilelauncher/locale/profilelauncher.dtd">
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog id="logDialog" title="&logDialogTitle;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml"
+        buttons="accept,cancel"
+        style="padding:20px">
+
+<script type="application/x-javascript" src="chrome://profilelauncher/content/logDialog.js" />
+<script type="application/x-javascript" src="chrome://profilelauncher/content/utils.js" />
+<script src="chrome://global/content/globalOverlay.js" />
+<script src="chrome://global/content/editMenuOverlay.js" />
+
+<hbox align="center">
+  <label value="&logProtocols;:" />
+  <checkbox id="pop3" label="&pop3;" checked="true" />
+  <checkbox id="imap" label="&imap;" checked="true" />
+  <checkbox id="smtp" label="&smtp;" checked="true" />
+</hbox>
+<hbox align="center" style="display:flex">
+  <label value="&logFile;:" />
+  <html:input id="profPath" flex="1" style="width:100%" />
+  <button label="&browse;" oncommand="pickFile(this)" />
+</hbox>
+<hbox align="center">
+  <description>&logDesc;</description>
+</hbox>
+</dialog>
