@@ -1,7 +1,7 @@
 Changelog for Profile Switcher
 
-3.0
-Supernova update, moved the toolbar button to the Tab Bar.
+3.1
+Supernova update, moved the toolbar button to the Unified Toolbar.
 The toolbar button can be hidden but not (yet) moved.
 Set minimum version to Thunderbird 111.0.
 Set maximum version to Thunderbird 117.*.

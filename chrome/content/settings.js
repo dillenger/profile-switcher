@@ -83,7 +83,7 @@ function initPanel() {
 
   document.getElementById("actionlist").selectedIndex = prefs.getIntPref("extensions.profileswitcher.close_before_launch");
   document.getElementById("sbpan").checked = prefs.getBoolPref("extensions.profileswitcher.show_statusbar_panel");
-  document.getElementById("tbbutton").checked = prefs.getBoolPref("extensions.profileswitcher.show_tabbar_button");
+  document.getElementById("tbbutton").checked = prefs.getBoolPref("extensions.profileswitcher.show_toolbar_button");
   document.getElementById("loadCurrentPage").checked = prefs.getBoolPref("extensions.profileswitcher.load_current_page");
   document.getElementById("hideMenus").checked = prefs.getBoolPref("extensions.profileswitcher.hide_menus");
   document.getElementById("promptpos").selectedIndex = prefs.getIntPref("extensions.profileswitcher.prompt.buttons_position");
@@ -161,7 +161,7 @@ function savePrefs() {
     prefs.setIntPref("extensions.profileswitcher.where_show_name", 1);
 
   prefs.setBoolPref("extensions.profileswitcher.show_statusbar_panel", document.getElementById("sbpan").checked);
-  prefs.setBoolPref("extensions.profileswitcher.show_tabbar_button", document.getElementById("tbbutton").checked);
+  prefs.setBoolPref("extensions.profileswitcher.show_toolbar_button", document.getElementById("tbbutton").checked);
   prefs.setBoolPref("extensions.profileswitcher.profiles_sort", document.getElementById("sortProfiles").checked);
 
   //if (isTB)

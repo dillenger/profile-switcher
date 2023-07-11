@@ -597,7 +597,7 @@ var profileLauncher = {
   setLabel : function() {
     var whereShow = profileLauncher.prefs.getIntPref("extensions.profileswitcher.where_show_name");
     var sbp = profileLauncher.prefs.getBoolPref("extensions.profileswitcher.show_statusbar_panel");
-    var tbb = profileLauncher.prefs.getBoolPref("extensions.profileswitcher.show_tabbar_button");
+    var tbb = profileLauncher.prefs.getBoolPref("extensions.profileswitcher.show_toolbar_button");
     var used_prof = profileLauncher.getComplexPref("extensions.profileswitcher.profile.in_use");
     try {
       used_prof = profileLauncher.converter.ConvertToUnicode(used_prof);

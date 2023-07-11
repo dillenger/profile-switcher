@@ -35,10 +35,10 @@ function onLoad(activatedWhileWindowOpen) {
       </menupopup>
     </popupset>
 
-    <toolbar id="tabs-toolbar">
+    <toolbar id="unifiedToolbar">
       <toolbarbutton id="profSwitcherButtonTB"
                      is="toolbarbutton-menu-button"
-                     insertafter="tabmail-tabs"
+                     insertbefore="button-appmenu"
                      label-id="&profiles;"
                      class="toolbarbutton-1"
                      type="menu-button"

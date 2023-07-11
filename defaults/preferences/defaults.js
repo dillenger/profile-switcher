@@ -1,7 +1,7 @@
 pref("extensions.profileswitcher.close_before_launch", 1);
 pref("extensions.pswitcher2@dillinger.description", "chrome://profilelauncher/locale/profilelauncher.properties");
 pref("extensions.profileswitcher.where_show_name", 1);
-pref("extensions.profileswitcher.show_tabbar_button", true);
+pref("extensions.profileswitcher.show_toolbar_button", true);
 pref("extensions.profileswitcher.show_statusbar_panel", true);
 pref("extensions.profileswitcher.show_name_titlebar", false);
 pref("extensions.profileswitcher.load_current_page", false);
