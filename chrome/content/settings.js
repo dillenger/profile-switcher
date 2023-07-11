@@ -1,30 +1,30 @@
 const Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-var PS_converter = Components.classes["@mozilla.org/intl/scriptableunicodeconverter"]
-             .createInstance(Components.interfaces.nsIScriptableUnicodeConverter);
+var PS_converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]
+  .createInstance(Ci.nsIScriptableUnicodeConverter);
 PS_converter.charset = "UTF-8";
-var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
-var mynewbundle = Components.classes["@mozilla.org/intl/stringbundle;1"]
-      .getService(Components.interfaces.nsIStringBundleService);
+var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
+var mynewbundle = Cc["@mozilla.org/intl/stringbundle;1"]
+  .getService(Ci.nsIStringBundleService);
 var mybundle = mynewbundle.createBundle("chrome://profilelauncher/locale/profilelauncher.properties");
 var newInstance;
 //var isTB;
-var sstr = Components.classes["@mozilla.org/supports-string;1"]
-      .createInstance(Components.interfaces.nsISupportsString);
+var sstr = Cc["@mozilla.org/supports-string;1"]
+  .createInstance(Ci.nsISupportsString);
 
 function getComplexPref(pref) {
   if (prefs.getStringPref)
     return prefs.getStringPref(pref);
   else
-    return prefs.getComplexValue(pref,Components.interfaces.nsISupportsString).data;
+    return prefs.getComplexValue(pref, Ci.nsISupportsString).data;
 }
 
-function setComplexPref(pref,value) {
+function setComplexPref(pref, value) {
   if (prefs.setStringPref)
-    prefs.setStringPref(pref,value);
+    prefs.setStringPref(pref, value);
   else {
     sstr.data = value;
-    prefs.setComplexValue(pref,Components.interfaces.nsISupportsString,sstr);
+    prefs.setComplexValue(pref, Ci.nsISupportsString, sstr);
   }
 }
 
@@ -32,33 +32,33 @@ function convToUnicode(str) {
   try {
     str = PS_converter.ConvertToUnicode(str);
   }
-  catch(e) {}
+  catch (e) { }
   return str;
 }
 
 function insensitive(s1, s2) {
   var s1lower = s1.toLowerCase();
   var s2lower = s2.toLowerCase();
-  return s1lower > s2lower? 1 : (s1lower < s2lower? -1 : 0);
+  return s1lower > s2lower ? 1 : (s1lower < s2lower ? -1 : 0);
 }
 
 function initPanel() {
-  document.addEventListener("dialogaccept", function() {savePrefs()}); // This replaces ondialogaccept in XUL.
+  document.addEventListener("dialogaccept", function () { savePrefs() }); // This replaces ondialogaccept in XUL.
   //isTB = navigator.userAgent.indexOf("Thunderbird") > -1;
   //if (isTB) {
-    document.getElementById("otherOptions").childNodes[1].collapsed = true;
-    document.getElementById("otherOptions").childNodes[2].collapsed = true;
+  document.getElementById("otherOptions").childNodes[1].collapsed = true;
+  document.getElementById("otherOptions").childNodes[2].collapsed = true;
   //}
   if (document.getElementById("titlebar"))
     document.getElementById("titlebar").label = mybundle.GetStringFromName("titleBar");
   var where = prefs.getIntPref("extensions.profileswitcher.where_show_name");
   if (where == 1)
-     document.getElementById("titlebar").checked = false;
+    document.getElementById("titlebar").checked = false;
   else
-     document.getElementById("titlebar").checked = true;
+    document.getElementById("titlebar").checked = true;
 
   var defProf = getComplexPref("extensions.profileswitcher.default_profile_name");
-  document.getElementById("currDefProfName").value =  convToUnicode(defProf);
+  document.getElementById("currDefProfName").value = convToUnicode(defProf);
 
   var profile_in_use = getComplexPref("extensions.profileswitcher.profile.in_use");
   var profilesListPref = getComplexPref("extensions.profileswitcher.profiles.list");
@@ -67,7 +67,7 @@ function initPanel() {
   profilesList.sort(insensitive);
   var profilePopup = document.getElementById("profiles");
   var sel = null;
-  for (var i=0;i<profilesList.length;i++) {
+  for (var i = 0; i < profilesList.length; i++) {
     var el = profilePopup.appendItem(convToUnicode(profilesList[i]), profilesList[i]);
     if (profile_in_use == profilesList[i])
       el.setAttribute("disabled", "true");
@@ -109,7 +109,7 @@ function initPanel() {
   try {
     document.getElementById("execpath").value = getComplexPref("extensions.profileswitcher.executable_custom_path");
   }
-  catch(e) {}
+  catch (e) { }
 
   if (profileSwitcherUtils.os().indexOf("win") > -1) {
     newInstance = false;
@@ -134,21 +134,11 @@ async function pickFile(el) {
   }
 }
 
-//function getMainWindow() {
-  //var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                   //.getService(Components.interfaces.nsIWindowMediator);
-  ////if (isTB)
-    //var win = wm.getMostRecentWindow("mail:3pane");
-  ////else
-    ////var win = wm.getMostRecentWindowr("navigator:browser");
-  //return win;
-//}
-
 function savePrefs() {
-  var str = Components.classes["@mozilla.org/supports-string;1"]
-      .createInstance(Components.interfaces.nsISupportsString);
-  if (newInstance)
+  if (newInstance) {
     prefs.setBoolPref("extensions.profileswitcher.enable_new_instance", document.getElementById("new_instance").checked);
+  }
+
   prefs.setBoolPref("extensions.profileswitcher.onload_reset_noremote", document.getElementById("no_remote").checked);
   prefs.setIntPref("extensions.profileswitcher.close_before_launch", document.getElementById("actionlist").selectedIndex);
   var whereValue = document.getElementById("titlebar").checked;
@@ -160,46 +150,37 @@ function savePrefs() {
   prefs.setBoolPref("extensions.profileswitcher.show_statusbar_panel", document.getElementById("sbpan").checked);
   prefs.setBoolPref("extensions.profileswitcher.show_toolbar_button", document.getElementById("tbbutton").checked);
   prefs.setBoolPref("extensions.profileswitcher.profiles_sort", document.getElementById("sortProfiles").checked);
-
-  //if (isTB)
-    prefs.setBoolPref("extensions.profileswitcher.load_current_page", false);
-  //else
-    //prefs.setBoolPref("extensions.profileswitcher.load_current_page", document.getElementById("loadCurrentPage").checked);
-
-  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
-                   .getService(Components.interfaces.nsIWindowMediator);
-  //if (isTB)
-    var enumerator = wm.getEnumerator("mail:3pane");
-  //else
-    //var enumerator = wm.getEnumerator("navigator:browser");
-
+  prefs.setBoolPref("extensions.profileswitcher.load_current_page", false);
   prefs.setIntPref("extensions.profileswitcher.icon_color", document.getElementById("colors").selectedItem.value);
   prefs.setIntPref("extensions.profileswitcher.prompt.buttons_position", document.getElementById("promptpos").selectedItem.value);
 
   if (document.getElementById("execpath").value.length > 2)
-    setComplexPref("extensions.profileswitcher.executable_custom_path",document.getElementById("execpath").value);
+    setComplexPref("extensions.profileswitcher.executable_custom_path", document.getElementById("execpath").value);
   else
     prefs.clearUserPref("extensions.profileswitcher.executable_custom_path");
-
 
   var shortcut = document.getElementById("PMkey").value;
   if (shortcut.length > 0) {
     if (document.getElementById("PMshift").checked)
-      shortcut  = shortcut  + " shift";
+      shortcut = shortcut + " shift";
     if (document.getElementById("PMalt").checked)
-      shortcut  = shortcut  + " alt";
+      shortcut = shortcut + " alt";
     if (document.getElementById("PMcontrol").checked)
-      shortcut  = shortcut  + " accel";
+      shortcut = shortcut + " accel";
     prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", shortcut);
   }
   else
     prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", "");
 
-  setComplexPref("extensions.profileswitcher.profile.button_launch",document.getElementById("profiles").selectedItem.value);
+  setComplexPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);
 
-  var hideMenus =  document.getElementById("hideMenus").checked;
+  var hideMenus = document.getElementById("hideMenus").checked;
   prefs.setBoolPref("extensions.profileswitcher.hide_menus", hideMenus);
-  while(enumerator.hasMoreElements()) {
+
+
+  // Update TB windows.
+  var enumerator = Services.wm.getEnumerator("mail:3pane")
+  while (enumerator.hasMoreElements()) {
     var win = enumerator.getNext();
     if (shortcut.length > 0) {
       var keyPref = shortcut.split(" ");
@@ -223,18 +204,18 @@ function savePrefs() {
     win.document.getElementById("MFP_PSsep1").collapsed = hideMenus;
     //win.document.getElementById("MFP_PSsep2").collapsed = hideMenus;
     //if (win.document.getElementById("appmenuPrimaryPane")) {
-      //win.document.getElementById("MFP_PSsep3").collapsed = hideMenus;
-      //win.document.getElementById("MFP_PSmenu3").collapsed = hideMenus;
-      //win.document.getElementById("MFP_PSmenu4").collapsed = hideMenus;
+    //win.document.getElementById("MFP_PSsep3").collapsed = hideMenus;
+    //win.document.getElementById("MFP_PSmenu3").collapsed = hideMenus;
+    //win.document.getElementById("MFP_PSmenu4").collapsed = hideMenus;
     //}
     //if (isTB)
-      var statusbar = win.document.getElementById("statusText");
+    var statusbar = win.document.getElementById("statusText");
     //else if (win.document.getElementById("addon-bar"))
-      //var statusbar = win.document.getElementById("addon-bar");
+    //var statusbar = win.document.getElementById("addon-bar");
     //else
-      //var statusbar = win.document.getElementById("statusbar-display");
+    //var statusbar = win.document.getElementById("statusbar-display");
     var profilename = getComplexPref("extensions.profileswitcher.profile.in_use");
-    if (! document.getElementById("sbpan").checked)
+    if (!document.getElementById("sbpan").checked)
       win.document.getElementById("profileNameSBP").collapsed = true;
     else {
       //win.document.getElementById("profileNameLabel").value =  convToUnicode(profilename);
@@ -242,7 +223,7 @@ function savePrefs() {
       win.document.getElementById("profileNameSBP").setAttribute("label", profilename);
       win.document.getElementById("status-bar").appendChild(win.document.getElementById("profileNameSBP"));
     }
-    if (! document.getElementById("tbbutton").checked)
+    if (!document.getElementById("tbbutton").checked)
       win.document.getElementById("profSwitcherButtonTB").collapsed = true;
     else
       win.document.getElementById("profSwitcherButtonTB").collapsed = false;
