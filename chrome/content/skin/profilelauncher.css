@@ -19,3 +19,7 @@ groupbox.left {
 groupbox.right {
   padding: 8px 4px 8px 8px;
 }
+
+#profSwitcherButtonTB .toolbarbutton-menubutton-dropmarker::before {
+  height: unset;
+}
