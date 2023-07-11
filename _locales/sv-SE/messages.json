@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "Profilväxling"
-  },
-  "extDesc": {
-    "message": "Lägger till alternativ för att starta andra profiler"
-  }
+    "PMshortcut": {
+        "message": "Kortkommando för att öppna profilhanteraren"
+    },
+    "TTtext": {
+        "message": "Namn på aktuell profil"
+    },
+    "advanced": {
+        "message": "Avancerat"
+    },
+    "advancedLabel1": {
+        "message": "Med dessa alternativ kan du förändra programmets"
+    },
+    "advancedLabel2": {
+        "message": "beteende när det anropas av ett annat program"
+    },
+    "alt": {
+        "message": "Alt"
+    },
+    "asPanel": {
+        "message": "I en statusfältpanel (till höger)"
+    },
+    "asPanelLeft": {
+        "message": "I en statusfältpanel (till vänster)"
+    },
+    "asTooltip": {
+        "message": "Som ett verktygstips till statusfältet"
+    },
+    "askalways": {
+        "message": "Fråga alltid vad som skall göras"
+    },
+    "blue": {
+        "message": "Blå"
+    },
+    "browse": {
+        "message": "Bläddra"
+    },
+    "closealways": {
+        "message": "Stäng alltid den aktuella profilen"
+    },
+    "confirmSafeMode": {
+        "message": "För att kunna köra Profilhanteraren i felsäkert läge, kommer den nuvarande\\\\nprofilen automatiskt att stängas. Vill du fortsätta?"
+    },
+    "control": {
+        "message": "Ctrl"
+    },
+    "currentDefProf": {
+        "message": "Aktuell standardprofil:"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "Stäng aldrig den aktuella profilen"
+    },
+    "emptyDisable": {
+        "message": "Lämna fältet tomt för att inaktivera"
+    },
+    "execCaption": {
+        "message": "Sökväg till körbar fil:"
+    },
+    "execLabel": {
+        "message": "Ange en sökväg endast om den automatiska identifieringen inte fungerar"
+    },
+    "extDesc": {
+        "message": "Lägger till alternativ för att starta andra profiler"
+    },
+    "extName": {
+        "message": "Profilväxling"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Lägger till profilnamnet i statusfältet och ger möjlighet att starta andra profiler"
+    },
+    "fuchsia": {
+        "message": "Magenta"
+    },
+    "green": {
+        "message": "Grön"
+    },
+    "hideMenus": {
+        "message": "Dölj menyer"
+    },
+    "iconColorLabel": {
+        "message": "Ikonfärg för denna profil"
+    },
+    "iconicTooltipLine1": {
+        "message": "För att byta standardprofil, öppna profilhanteraren, stäng"
+    },
+    "iconicTooltipLine2": {
+        "message": "alla öppnade profiler och välj därefter i profilhanteraren"
+    },
+    "iconicTooltipLine3": {
+        "message": "den profil som du vill använda som standard och starta den."
+    },
+    "iconicTooltipLine4": {
+        "message": "Ett byte av profil via tillägget ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "byter inte ut standardprofilen."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Använd endast verktygsfältsknappen"
+    },
+    "key": {
+        "message": "Tangent"
+    },
+    "loadCurrentPage.label": {
+        "message": "Öppna profilen medan den aktiva webbsidan läses in"
+    },
+    "logDesc": {
+        "message": "När du klickar på OK startas programmet om för att aktivera loggningen."
+    },
+    "logDialogTitle": {
+        "message": "Välj de protokoll som skall inkluderas i loggfilen."
+    },
+    "logErrorNoPath": {
+        "message": "Fel! Välj en plats där loggfilen skall sparas."
+    },
+    "logErrorNoProtocol": {
+        "message": "Fel! Välj åtminstone ett protokoll som skall inkluderas i loggfilen."
+    },
+    "logFile": {
+        "message": "Loggfil"
+    },
+    "logProtocols": {
+        "message": "Protokoll"
+    },
+    "mustRestart": {
+        "message": "Du måste starta om programmet för att aktivera detta alternativ"
+    },
+    "newInstance": {
+        "message": "Använd en ny instans för att köra de andra profilerna"
+    },
+    "no": {
+        "message": "Nej"
+    },
+    "noexecfile": {
+        "message": "Det går inte att hitta den körbara filen.\\nFör att åtgärda det här, ange en giltig sökväg i inställningarna."
+    },
+    "normalmode": {
+        "message": "Normalt läge"
+    },
+    "openLink": {
+        "message": "Öppna med en annan profil"
+    },
+    "openOptions": {
+        "message": "Inställningar"
+    },
+    "optionCaption": {
+        "message": "Beteende när du kör en annan profil eller profilhanteraren:"
+    },
+    "otherCaption": {
+        "message": "Övrigt"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profile to launch by clicking the icon"
+    },
+    "profileManager": {
+        "message": "Profile manager"
+    },
+    "profileinuse": {
+        "message": "Nuvarande profil"
+    },
+    "profiles": {
+        "message": "Profiler"
+    },
+    "purple": {
+        "message": "Lila"
+    },
+    "quittitle": {
+        "message": "ProfileSwitchers bekräftelsedialog"
+    },
+    "quityesno": {
+        "message": "Skall nuvarande profil stängas vid bytet?"
+    },
+    "quityesno2": {
+        "message": "Quit the current profile before launching the profile manager?"
+    },
+    "red": {
+        "message": "Röd"
+    },
+    "refresh": {
+        "message": "Uppdatera listan"
+    },
+    "resetNoremote": {
+        "message": "Återställ variabeln MOZ_NO_REMOTE vid programstart"
+    },
+    "restartWithLog": {
+        "message": "Starta om och aktivera loggning"
+    },
+    "safemode": {
+        "message": "Felsäkert läge"
+    },
+    "shift": {
+        "message": "Skift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "In menus sort profiles alphabetically"
+    },
+    "startPM": {
+        "message": "Öppna profilhanteraren"
+    },
+    "startProf": {
+        "message": "Starta en annan profil"
+    },
+    "titleBar": {
+        "message": "I namnlisten"
+    },
+    "unknownos": {
+        "message": "Kan inte utföra åtgärden: Operativsystemet stöds inte"
+    },
+    "whereCaption": {
+        "message": "Visa profilnamn:"
+    },
+    "yellow": {
+        "message": "Gul"
+    },
+    "yes": {
+        "message": "Ja"
+    },
+    "yesnoLabel": {
+        "message": "Knapparnas position i frågefönstret"
+    }
 }

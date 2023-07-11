@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "프로필 전환기"
-  },
-  "extDesc": {
-    "message": "다른 프로필 실행 옵션 추가"
-  }
+    "PMshortcut": {
+        "message": "프로파일 관리자을 불러오기 위한 단축키"
+    },
+    "TTtext": {
+        "message": "현재 프로파일 명"
+    },
+    "advanced": {
+        "message": "고급"
+    },
+    "advancedLabel1": {
+        "message": "다른 응용 프로그램에 의해 불려졌을때 이 선택사항을 사용해"
+    },
+    "advancedLabel2": {
+        "message": "프로그램의 동작을 변경할 수 있습니다."
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "상태막대(오른쪽) 패널 안에"
+    },
+    "asPanelLeft": {
+        "message": "상태막대(왼쪽) 패널 안에"
+    },
+    "asTooltip": {
+        "message": "상태막대 툴팁으로"
+    },
+    "askalways": {
+        "message": "언제나 무엇을 할건지 물음"
+    },
+    "blue": {
+        "message": "파랑"
+    },
+    "browse": {
+        "message": "찾아보기"
+    },
+    "closealways": {
+        "message": "현재 프로파일을 언제나 닫음"
+    },
+    "confirmSafeMode": {
+        "message": "안전 모드안에서 프로파일 관리자를 실행하도록 명령하면, \\\\n현재 프로파일은 자동으로 닫힙니다. 계속하시겠습니까?"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "현재 기본 프로파일:"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "현재 프로파일은 절대 닫지 않음"
+    },
+    "emptyDisable": {
+        "message": "사용하지 않으면 빈칸으로 남겨두세요"
+    },
+    "execCaption": {
+        "message": "실행파일 경로:"
+    },
+    "execLabel": {
+        "message": "만약 자동 인식이 동작하지 않으면 경로를 지정하세요"
+    },
+    "extDesc": {
+        "message": "다른 프로필 실행 옵션 추가"
+    },
+    "extName": {
+        "message": "프로필 전환기"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "상태 막대 툴팁 내 프로파일 명과 다른 프로파일 올리는 선택사항을 추가합니다."
+    },
+    "fuchsia": {
+        "message": "자홍색"
+    },
+    "green": {
+        "message": "녹색"
+    },
+    "hideMenus": {
+        "message": "메뉴 감추기"
+    },
+    "iconColorLabel": {
+        "message": "이 프로필을 위한 아이콘 색상"
+    },
+    "iconicTooltipLine1": {
+        "message": "기본 프로파일을 변경하려면, 프로파일 관리자를 실행해"
+    },
+    "iconicTooltipLine2": {
+        "message": "사용중인 프로파일을 모두 닫고, 프로파일 관리자에서"
+    },
+    "iconicTooltipLine3": {
+        "message": "기본으로 하길 원하는 프로파일을 선택하고 실행하세요."
+    },
+    "iconicTooltipLine4": {
+        "message": "ProfileSwitcher 확장기능을 통해 전환된 프로파일은"
+    },
+    "iconicTooltipLine5": {
+        "message": "기본 프로파일을 변경하지 않습니다."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "도구막대 버튼만 사용"
+    },
+    "key": {
+        "message": "키"
+    },
+    "loadCurrentPage.label": {
+        "message": "현재 페이지를 로딩해 프로파일 열기"
+    },
+    "logDesc": {
+        "message": "확인 버튼을 클릭시 로그를 사용하기 위해 프로그램을 재시작합니다."
+    },
+    "logDialogTitle": {
+        "message": "로그 파일내 포함되는 프로토콜을 선택하세요"
+    },
+    "logErrorNoPath": {
+        "message": "오류! 로그 파일의 대상을 선택하세요."
+    },
+    "logErrorNoProtocol": {
+        "message": "오류! 로그 파일 내 포함되는 한개이상의 프로토콜을 선택하세요."
+    },
+    "logFile": {
+        "message": "로그 파일"
+    },
+    "logProtocols": {
+        "message": "프로토콜"
+    },
+    "mustRestart": {
+        "message": "이 선택사항을 적용하려면 프로그램을 재시작해야 합니다"
+    },
+    "newInstance": {
+        "message": "다른 프로파일 실행시 'new_instance' 사용"
+    },
+    "no": {
+        "message": "아니오"
+    },
+    "noexecfile": {
+        "message": "오류:실행가능한 파일을 찾을 수 없음"
+    },
+    "normalmode": {
+        "message": "일반 모드"
+    },
+    "openLink": {
+        "message": "다른 프로파일로 열기"
+    },
+    "openOptions": {
+        "message": "선택사항"
+    },
+    "optionCaption": {
+        "message": "다른 프로파일 또는 프로파일 관리자 실행시 동작:"
+    },
+    "otherCaption": {
+        "message": "기타 선택사항"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profile to launch by clicking the icon"
+    },
+    "profileManager": {
+        "message": "Profile manager"
+    },
+    "profileinuse": {
+        "message": "현재 프로파일"
+    },
+    "profiles": {
+        "message": "프로파일"
+    },
+    "purple": {
+        "message": "보라"
+    },
+    "quittitle": {
+        "message": "프로파일 전환 확인 대화창"
+    },
+    "quityesno": {
+        "message": "전환시 현재 프로파일을 닫습니까?"
+    },
+    "quityesno2": {
+        "message": "Quit the current profile before launching the profile manager?"
+    },
+    "red": {
+        "message": "빨강"
+    },
+    "refresh": {
+        "message": "목록 새로고침"
+    },
+    "resetNoremote": {
+        "message": "시작시 MOZ_NO_REMOTE 변수 재설정"
+    },
+    "restartWithLog": {
+        "message": "로그를 사용하기위해 재시작"
+    },
+    "safemode": {
+        "message": "안전 모드"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "In menus sort profiles alphabetically"
+    },
+    "startPM": {
+        "message": "프로파일 관리자 열기"
+    },
+    "startProf": {
+        "message": "다른 프로파일 띄우기"
+    },
+    "titleBar": {
+        "message": "제목막대 내"
+    },
+    "unknownos": {
+        "message": "승낙할 수 없음: 동작 체계가 지원하지 않음"
+    },
+    "whereCaption": {
+        "message": "프로파일 명 표시:"
+    },
+    "yellow": {
+        "message": "노랑"
+    },
+    "yes": {
+        "message": "예"
+    },
+    "yesnoLabel": {
+        "message": "프롬프트 내 버튼의 위치"
+    }
 }

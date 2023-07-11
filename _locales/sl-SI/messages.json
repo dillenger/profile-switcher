@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "Preklopnik profilov"
-  },
-  "extDesc": {
-    "message": "Doda možnosti za zagon drugih profilov"
-  }
+    "PMshortcut": {
+        "message": "Bližnjica za zagon upravitelja profilov"
+    },
+    "TTtext": {
+        "message": "Ime trenutnega orofila"
+    },
+    "advanced": {
+        "message": "Napredno"
+    },
+    "advancedLabel1": {
+        "message": "S temi možnostmi lahko spremenite vedenje"
+    },
+    "advancedLabel2": {
+        "message": "programa, ko ga kliče drug program"
+    },
+    "alt": {
+        "message": "Alt"
+    },
+    "asPanel": {
+        "message": "V podoknu vrstice stanja (na desni)"
+    },
+    "asPanelLeft": {
+        "message": "V podoknu vrstice stanja (na levi)"
+    },
+    "asTooltip": {
+        "message": "kot orodni namig vrstice stanja"
+    },
+    "askalways": {
+        "message": "Vedno vprašaj, kaj storiti"
+    },
+    "blue": {
+        "message": "Modra"
+    },
+    "browse": {
+        "message": "Brskaj"
+    },
+    "closealways": {
+        "message": "Vedno zapri trenutni profil"
+    },
+    "confirmSafeMode": {
+        "message": "Za izvajanje upravitelja profilov v varnem načinu bo trenutni profil\\nsamodejno zaprt. Ali želite nadaljevati?"
+    },
+    "control": {
+        "message": "Control"
+    },
+    "currentDefProf": {
+        "message": "Trenutni privzeti profil:"
+    },
+    "disableButtonRun": {
+        "message": "Brez"
+    },
+    "dontclose": {
+        "message": "Nikoli ne zapri trenutnega profila"
+    },
+    "emptyDisable": {
+        "message": "Pustite polje prazno za onemogočanje"
+    },
+    "execCaption": {
+        "message": "Pot izvedljive datoteke:"
+    },
+    "execLabel": {
+        "message": "Nastavite pot samo, če samodejno zaznavanje ne deluje"
+    },
+    "extDesc": {
+        "message": "Doda možnosti za zagon drugih profilov"
+    },
+    "extName": {
+        "message": "Preklopnik profilov"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Doda ime profila v orodni namig vrstice stanja in možnosti za zagon drugih profilov"
+    },
+    "fuchsia": {
+        "message": "Fuksija"
+    },
+    "green": {
+        "message": "Zelena"
+    },
+    "hideMenus": {
+        "message": "Skrij menije"
+    },
+    "iconColorLabel": {
+        "message": "Barva ikone za ta profil"
+    },
+    "iconicTooltipLine1": {
+        "message": "Za spreminjanje privzetega profila zaženite upravitelja profilov,"
+    },
+    "iconicTooltipLine2": {
+        "message": "kar zapre vse profile v uporabi, potem v upravitelju profilov izberite"
+    },
+    "iconicTooltipLine3": {
+        "message": "profil, ki ga želite kot privzetega in ga zaženite."
+    },
+    "iconicTooltipLine4": {
+        "message": "Preklop profila preko razširitve ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "ne bo spremenila privzetega profila."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Uporabi samo gumb orodne vrstice"
+    },
+    "key": {
+        "message": "Tipka"
+    },
+    "loadCurrentPage.label": {
+        "message": "Odpri profil z nalaganjem trenutne strani"
+    },
+    "logDesc": {
+        "message": "Klik na gumb V redu bo ponovno zagnal program z omogočenim beleženjem."
+    },
+    "logDialogTitle": {
+        "message": "Izberite protokole za vključitev v dnevnik datotek"
+    },
+    "logErrorNoPath": {
+        "message": "Napaka! Izberite cilj dnevniške datoteke."
+    },
+    "logErrorNoProtocol": {
+        "message": "Napaka! Izberite vsaj protokol za vključitev v dnevniško datoteko."
+    },
+    "logFile": {
+        "message": "Datoteka dnevnika"
+    },
+    "logProtocols": {
+        "message": "Protokoli"
+    },
+    "mustRestart": {
+        "message": "Za omogočanje te možnosti morate ponovno zagnati program"
+    },
+    "newInstance": {
+        "message": "Uporabi 'nov primerek' za zagon drugih profilov"
+    },
+    "no": {
+        "message": "ne"
+    },
+    "noexecfile": {
+        "message": "Izvedljive datoteke ni mogoče najti.\\nDa to popravite, v možnostih nastavite veljavno pot."
+    },
+    "normalmode": {
+        "message": "Običajni način"
+    },
+    "openLink": {
+        "message": "Odpri z drugim profilom"
+    },
+    "openOptions": {
+        "message": "Možnosti"
+    },
+    "optionCaption": {
+        "message": "Vedenje ob izvajanju drugega profila ali upravitelja profilov:"
+    },
+    "otherCaption": {
+        "message": "Druge možnosti"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profil za zagon s klikom na ikono"
+    },
+    "profileManager": {
+        "message": "Upravitelj profilov"
+    },
+    "profileinuse": {
+        "message": "Trenutni profil"
+    },
+    "profiles": {
+        "message": "Profili"
+    },
+    "purple": {
+        "message": "Vijolična"
+    },
+    "quittitle": {
+        "message": "Pogovorno okno za potrditev ProfileSwitcher"
+    },
+    "quityesno": {
+        "message": "Zapri trenutni profil pred zagonom profila \"%s\"?"
+    },
+    "quityesno2": {
+        "message": "Zapri trenutni profil pred zagonom upravitelja profilov?"
+    },
+    "red": {
+        "message": "Rdeča"
+    },
+    "refresh": {
+        "message": "Osveži seznam"
+    },
+    "resetNoremote": {
+        "message": "Ob zagonu ponastavi spremenljivko MOZ_NO_REMOTE"
+    },
+    "restartWithLog": {
+        "message": "Ponovno zaženi za omogočanje dnevnika"
+    },
+    "safemode": {
+        "message": "Varni način"
+    },
+    "shift": {
+        "message": "Shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "V menijih razvrsti profile po abecedi"
+    },
+    "startPM": {
+        "message": "Odpri upravitelja profilov"
+    },
+    "startProf": {
+        "message": "Zaženi drug profil"
+    },
+    "titleBar": {
+        "message": "V nazivni vrstici"
+    },
+    "unknownos": {
+        "message": "Opravilo ni mogoče: operacijski sistem ni podprt"
+    },
+    "whereCaption": {
+        "message": "Prikaži ime profila:"
+    },
+    "yellow": {
+        "message": "Rumena"
+    },
+    "yes": {
+        "message": "da"
+    },
+    "yesnoLabel": {
+        "message": "Umesti gumbe v poziv"
+    }
 }

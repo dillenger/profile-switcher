@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "Comutator de profil"
-  },
-  "extDesc": {
-    "message": "Adaugă opțiuni pentru a lansa alte profiluri"
-  }
+    "PMshortcut": {
+        "message": "Tastă directă pentru lansarea gestionarului de profiluri"
+    },
+    "TTtext": {
+        "message": "Denumirea profilului curent"
+    },
+    "advanced": {
+        "message": "Complex"
+    },
+    "advancedLabel1": {
+        "message": "Cu aceste opțiuni se poate modifica comportamentul"
+    },
+    "advancedLabel2": {
+        "message": "programului când este lansat din alte aplicații"
+    },
+    "alt": {
+        "message": "Alt"
+    },
+    "asPanel": {
+        "message": "Se afișează în bara de stare, la dreapta"
+    },
+    "asPanelLeft": {
+        "message": "Se afișează în bara de stare, la stânga"
+    },
+    "asTooltip": {
+        "message": "Se afișează ca un balon informativ"
+    },
+    "askalways": {
+        "message": "Se solicită alegerea unei opțiuni"
+    },
+    "blue": {
+        "message": "Albastru"
+    },
+    "browse": {
+        "message": "Răsfoiește"
+    },
+    "closealways": {
+        "message": "Se închide întotdeauna profilul curent"
+    },
+    "confirmSafeMode": {
+        "message": "În vedera lansării gestionarului de profiluri în modul sigur,\\nprofilul curent va fi închis automat. Continuați?"
+    },
+    "control": {
+        "message": "Control"
+    },
+    "currentDefProf": {
+        "message": "Profil implicit:"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "Nu se închide profilul curent"
+    },
+    "emptyDisable": {
+        "message": "(se lasă necompletat pentru dezactivare)"
+    },
+    "execCaption": {
+        "message": "Locație program executabil"
+    },
+    "execLabel": {
+        "message": "(se folosește doar dacă nu se poate detecta automat)"
+    },
+    "extDesc": {
+        "message": "Adaugă opțiuni pentru a lansa alte profiluri"
+    },
+    "extName": {
+        "message": "Comutator de profil"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Afișează denumirea profilului curent în bara de stare și permite deschiderea cu alte profiluri"
+    },
+    "fuchsia": {
+        "message": "Purpuriu"
+    },
+    "green": {
+        "message": "Verde"
+    },
+    "hideMenus": {
+        "message": "Se ascund meniurile"
+    },
+    "iconColorLabel": {
+        "message": "Culoare pictogramă pentru profilul curent"
+    },
+    "iconicTooltipLine1": {
+        "message": "Pentru a schimba profilul implicit, lansați gestionarul de profiluri"
+    },
+    "iconicTooltipLine2": {
+        "message": "alegând închiderea tuturor profilurilor deschise și selectând apoi"
+    },
+    "iconicTooltipLine3": {
+        "message": "profilul pe care îl doriți a fi implicit."
+    },
+    "iconicTooltipLine4": {
+        "message": "Schimbând profilul curent prin intermediul extensiei „ProfileSwitcher”"
+    },
+    "iconicTooltipLine5": {
+        "message": "nu se modifică profilul implicit."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Se folosește doar butonul din bara de stare"
+    },
+    "key": {
+        "message": "Tastă"
+    },
+    "loadCurrentPage.label": {
+        "message": "La pornirea cu alt profil se încarcă pagina curentă"
+    },
+    "logDesc": {
+        "message": "Apăsând OK, programul repornește cu jurnalizarea activată."
+    },
+    "logDialogTitle": {
+        "message": "Selectare protocoale de inclus în jurnal"
+    },
+    "logErrorNoPath": {
+        "message": "Eroare! Furnizați locația și denumirea unui fișier jurnal."
+    },
+    "logErrorNoProtocol": {
+        "message": "Eroare! Selectați cel puțin un protocol pentru a fi inclus în jurnal."
+    },
+    "logFile": {
+        "message": "Jurnal"
+    },
+    "logProtocols": {
+        "message": "Protocoale"
+    },
+    "mustRestart": {
+        "message": "Schimbarea devine efectivă după repornirea programului"
+    },
+    "newInstance": {
+        "message": "Se folosește variabila NEW_INSTANCE pentru a porni cu alte profiluri"
+    },
+    "no": {
+        "message": "Nu"
+    },
+    "noexecfile": {
+        "message": "Imposibil de găsit programul executabil.\\nPentru a remedia situația, furnizați locația acestuia în caseta de opțiuni."
+    },
+    "normalmode": {
+        "message": "Mod normal"
+    },
+    "openLink": {
+        "message": "Deschide cu alt profil"
+    },
+    "openOptions": {
+        "message": "Opțiuni"
+    },
+    "optionCaption": {
+        "message": "La deschiderea cu alt profil sau a gestionarului de profiluri"
+    },
+    "otherCaption": {
+        "message": "Alte opțiuni"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profile to launch by clicking the icon"
+    },
+    "profileManager": {
+        "message": "Profile manager"
+    },
+    "profileinuse": {
+        "message": "Profil curent"
+    },
+    "profiles": {
+        "message": "Profiluri"
+    },
+    "purple": {
+        "message": "Mov"
+    },
+    "quittitle": {
+        "message": "Confirmare schimbare profiluri"
+    },
+    "quityesno": {
+        "message": "Închideți navigatorul cu profilul curent înainte de a-l deschide cu profilul selectat?"
+    },
+    "quityesno2": {
+        "message": "Quit the current profile before launching the profile manager?"
+    },
+    "red": {
+        "message": "Roșu"
+    },
+    "refresh": {
+        "message": "Împrospătează lista"
+    },
+    "resetNoremote": {
+        "message": "Se inițializează variabila MOZ_NO_REMOTE la pornire"
+    },
+    "restartWithLog": {
+        "message": "Repornește cu jurnalizare"
+    },
+    "safemode": {
+        "message": "Mod sigur"
+    },
+    "shift": {
+        "message": "Shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "In menus sort profiles alphabetically"
+    },
+    "startPM": {
+        "message": "Deschide gestionarul de profiluri"
+    },
+    "startProf": {
+        "message": "Pornește cu alt profil"
+    },
+    "titleBar": {
+        "message": "Se afișează în bara de titlu"
+    },
+    "unknownos": {
+        "message": "Imposibil de finalizat: sistemul nu este acceptat"
+    },
+    "whereCaption": {
+        "message": "Denumire profil"
+    },
+    "yellow": {
+        "message": "Galben"
+    },
+    "yes": {
+        "message": "Da"
+    },
+    "yesnoLabel": {
+        "message": "Aranjament butoane în caseta de interogare"
+    }
 }

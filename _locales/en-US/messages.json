@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "Profile Switcher"
-  },
-  "extDesc": {
-    "message": "Adds options to launch other profiles"
-  }
+    "PMshortcut": {
+        "message": "Shortcut to launch the profile manager"
+    },
+    "TTtext": {
+        "message": "Current profile name"
+    },
+    "advanced": {
+        "message": "Advanced"
+    },
+    "advancedLabel1": {
+        "message": "With these options you can change the behaviour"
+    },
+    "advancedLabel2": {
+        "message": "of the program when it's called by another application"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "In a statusbar panel (on the right)"
+    },
+    "asPanelLeft": {
+        "message": "In a statusbar panel (on the left)"
+    },
+    "asTooltip": {
+        "message": "as statusbar tooltip"
+    },
+    "askalways": {
+        "message": "Ask always what to do"
+    },
+    "blue": {
+        "message": "Blue"
+    },
+    "browse": {
+        "message": "Browse"
+    },
+    "closealways": {
+        "message": "Always close the current profile"
+    },
+    "confirmSafeMode": {
+        "message": "In order to run profilemanager in safe-mode, the current profile\\nwill be automatically closed. Do you want to continue?"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "Current default profile:"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "Never close the current profile"
+    },
+    "emptyDisable": {
+        "message": "Leave the field blank to disable"
+    },
+    "execCaption": {
+        "message": "Executable path:"
+    },
+    "execLabel": {
+        "message": "Set a path only if the auto-detection doesn't work"
+    },
+    "extDesc": {
+        "message": "Adds options to launch other profiles"
+    },
+    "extName": {
+        "message": "Profile Switcher"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Adds profile name to status bar tooltip and options to launch other profiles"
+    },
+    "fuchsia": {
+        "message": "Fuchsia"
+    },
+    "green": {
+        "message": "Green"
+    },
+    "hideMenus": {
+        "message": "Hide menus"
+    },
+    "iconColorLabel": {
+        "message": "Icon color for this profile"
+    },
+    "iconicTooltipLine1": {
+        "message": "To change the default profile, launch the profile manager"
+    },
+    "iconicTooltipLine2": {
+        "message": "closing all the profiles in use,then select in the profile manager"
+    },
+    "iconicTooltipLine3": {
+        "message": "the profile that you want as default one and launch it."
+    },
+    "iconicTooltipLine4": {
+        "message": "Switching profile through ProfileSwitcher extension"
+    },
+    "iconicTooltipLine5": {
+        "message": "will not change the default profile."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Use just the toolbar button"
+    },
+    "key": {
+        "message": "Key"
+    },
+    "loadCurrentPage.label": {
+        "message": "Open profile loading the current page"
+    },
+    "logDesc": {
+        "message": "Clicking on OK button the program will be restarted with the log enabled."
+    },
+    "logDialogTitle": {
+        "message": "Select the protocols to be included in the log file"
+    },
+    "logErrorNoPath": {
+        "message": "Error! Choose a destination for the log file."
+    },
+    "logErrorNoProtocol": {
+        "message": "Error! Select at least a protocol to be included in the log file."
+    },
+    "logFile": {
+        "message": "Log file"
+    },
+    "logProtocols": {
+        "message": "Protocols"
+    },
+    "mustRestart": {
+        "message": "You must restart the program to enable this option"
+    },
+    "newInstance": {
+        "message": "Use 'new_instance' to launch the other profiles"
+    },
+    "no": {
+        "message": "no"
+    },
+    "noexecfile": {
+        "message": "Impossible to find the executable file.\\nTo fix this, set a valid path in the options window."
+    },
+    "normalmode": {
+        "message": "Normal mode"
+    },
+    "openLink": {
+        "message": "Open with another profile"
+    },
+    "openOptions": {
+        "message": "Options"
+    },
+    "optionCaption": {
+        "message": "Behaviour when you run another profile or profilemanager:"
+    },
+    "otherCaption": {
+        "message": "Other options"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profile to launch by clicking the icon"
+    },
+    "profileManager": {
+        "message": "Profile manager"
+    },
+    "profileinuse": {
+        "message": "Current profile"
+    },
+    "profiles": {
+        "message": "Profiles"
+    },
+    "purple": {
+        "message": "Purple"
+    },
+    "quittitle": {
+        "message": "ProfileSwitcher confirm dialog"
+    },
+    "quityesno": {
+        "message": "Quit the current profile before launching the profile \"%s\"?"
+    },
+    "quityesno2": {
+        "message": "Quit the current profile before launching the profile manager?"
+    },
+    "red": {
+        "message": "Red"
+    },
+    "refresh": {
+        "message": "Refresh list"
+    },
+    "resetNoremote": {
+        "message": "Reset the variable MOZ_NO_REMOTE at the start"
+    },
+    "restartWithLog": {
+        "message": "Restart enabling the log"
+    },
+    "safemode": {
+        "message": "Safe-mode"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "In menus sort profiles alphabetically"
+    },
+    "startPM": {
+        "message": "Open Profile Manager"
+    },
+    "startProf": {
+        "message": "Launch another profile"
+    },
+    "titleBar": {
+        "message": "In the titlebar"
+    },
+    "unknownos": {
+        "message": "Unable to comply: operative system not supported"
+    },
+    "whereCaption": {
+        "message": "Show profile name:"
+    },
+    "yellow": {
+        "message": "Yellow"
+    },
+    "yes": {
+        "message": "yes"
+    },
+    "yesnoLabel": {
+        "message": "Position of the buttons in the prompt"
+    }
 }

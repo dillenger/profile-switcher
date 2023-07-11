@@ -1,8 +1,233 @@
 {
-  "extName": {
-    "message": "個人資料切換器"
-  },
-  "extDesc": {
-    "message": "添加啟動其他配置文件的選項"
-  }
+    "PMshortcut": {
+        "message": "启动配置文件管理器的快捷方式"
+    },
+    "TTtext": {
+        "message": "当前配置文件名称"
+    },
+    "advanced": {
+        "message": "高级"
+    },
+    "advancedLabel1": {
+        "message": "您可用这些选项更改"
+    },
+    "advancedLabel2": {
+        "message": "本程序被另一个程序调用时的行为"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "在状态栏面板 (右)"
+    },
+    "asPanelLeft": {
+        "message": "在状态栏面板 (左)"
+    },
+    "asTooltip": {
+        "message": "在状态栏提示"
+    },
+    "askalways": {
+        "message": "总是询问"
+    },
+    "blue": {
+        "message": "蓝"
+    },
+    "browse": {
+        "message": "浏览"
+    },
+    "closealways": {
+        "message": "关闭当前配置文件"
+    },
+    "confirmSafeMode": {
+        "message": "为了在安全模式运行配置文件管理器，当前配置文件将被自动关闭。\\n要继续吗？"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "当前的默认配置："
+    },
+    "disableButtonRun": {
+        "message": "无"
+    },
+    "dontclose": {
+        "message": "不关闭当前配置文件"
+    },
+    "emptyDisable": {
+        "message": "字段留空则禁用"
+    },
+    "execCaption": {
+        "message": "可执行文件路径："
+    },
+    "execLabel": {
+        "message": "如果自动检测未成功，请手动设置一个路径"
+    },
+    "extDesc": {
+        "message": "添加啟動其他配置文件的選項"
+    },
+    "extName": {
+        "message": "個人資料切換器"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "添加配置文件的名称到状态栏悬停提示，并添加选项用以启动其他配置文件"
+    },
+    "fuchsia": {
+        "message": "紫红"
+    },
+    "green": {
+        "message": "绿"
+    },
+    "hideMenus": {
+        "message": "隐藏菜单"
+    },
+    "iconColorLabel": {
+        "message": "此配置的图标颜色"
+    },
+    "iconicTooltipLine1": {
+        "message": "要更改默认配置文件，请启动配置文件管理器"
+    },
+    "iconicTooltipLine2": {
+        "message": "关闭所有使用中的配置文件，然后在配置文件管理器中选择"
+    },
+    "iconicTooltipLine3": {
+        "message": "您想要设为默认并启动的配置文件。"
+    },
+    "iconicTooltipLine4": {
+        "message": "通过 ProfileSwitcher 扩展切换配置文件"
+    },
+    "iconicTooltipLine5": {
+        "message": "将更改默认配置文件。"
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "只使用工具栏按钮"
+    },
+    "key": {
+        "message": "键"
+    },
+    "loadCurrentPage.label": {
+        "message": "打开配置文件加载当前页面"
+    },
+    "logDesc": {
+        "message": "点击确定按钮，程序将重启并启用日志。"
+    },
+    "logDialogTitle": {
+        "message": "选择日志文件中包含的协议"
+    },
+    "logErrorNoPath": {
+        "message": "错误！请选择日志文件的存储位置。"
+    },
+    "logErrorNoProtocol": {
+        "message": "错误！请选择至少一种日志文件中要包含的协议。"
+    },
+    "logFile": {
+        "message": "日志文件"
+    },
+    "logProtocols": {
+        "message": "协议"
+    },
+    "mustRestart": {
+        "message": "您必须重新启动程序才能启用此选项"
+    },
+    "newInstance": {
+        "message": "使用 'new_instance' 启动其他配置"
+    },
+    "no": {
+        "message": "否"
+    },
+    "noexecfile": {
+        "message": "无法找到可执行文件。\\n为了修复此问题，请在选项窗口中设置一个有效的路径。"
+    },
+    "normalmode": {
+        "message": "正常模式"
+    },
+    "openLink": {
+        "message": "用另一个配置打开"
+    },
+    "openOptions": {
+        "message": "选项"
+    },
+    "optionCaption": {
+        "message": "当您运行另一个配置文件或配置文件管理器时："
+    },
+    "otherCaption": {
+        "message": "其他选项"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "点击图标选择要启动的配置文件"
+    },
+    "profileManager": {
+        "message": "配置文件管理器"
+    },
+    "profileinuse": {
+        "message": "当前配置文件"
+    },
+    "profiles": {
+        "message": "配置文件"
+    },
+    "purple": {
+        "message": "紫"
+    },
+    "quittitle": {
+        "message": "ProfileSwitcher 确认对话框"
+    },
+    "quityesno": {
+        "message": "切换到“%s”之前关闭当前的配置文件？"
+    },
+    "quityesno2": {
+        "message": "启动“配置文件管理器”前退出当前的配置文件？"
+    },
+    "red": {
+        "message": "红"
+    },
+    "refresh": {
+        "message": "刷新列表"
+    },
+    "resetNoremote": {
+        "message": "启动时重置 MOZ_NO_REMOTE 变量"
+    },
+    "restartWithLog": {
+        "message": "重启时启用日志"
+    },
+    "safemode": {
+        "message": "安全模式"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "按字母顺序排列菜单中的配置文件"
+    },
+    "startPM": {
+        "message": "打开配置文件管理器"
+    },
+    "startProf": {
+        "message": "启动另一个配置文件"
+    },
+    "titleBar": {
+        "message": "在标题栏"
+    },
+    "unknownos": {
+        "message": "不能遵从：正在运转的系统不支持"
+    },
+    "whereCaption": {
+        "message": "显示配置文件名称："
+    },
+    "yellow": {
+        "message": "黄"
+    },
+    "yes": {
+        "message": "是"
+    },
+    "yesnoLabel": {
+        "message": "提示中按钮的位置"
+    }
 }
