@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Shortcut to launch the profile manager"
     },
@@ -39,7 +42,7 @@
         "message": "Always close the current profile"
     },
     "confirmSafeMode": {
-        "message": "In order to run profilemanager in safe-mode, the current profile\\nwill be automatically closed. Do you want to continue?"
+        "message": "In order to run profilemanager in safe-mode, the current profile will be automatically closed. Do you want to continue?"
     },
     "control": {
         "message": "control"
@@ -138,7 +141,7 @@
         "message": "no"
     },
     "noexecfile": {
-        "message": "Impossible to find the executable file.\\nTo fix this, set a valid path in the options window."
+        "message": "Impossible to find the executable file. To fix this, set a valid path in the options window."
     },
     "normalmode": {
         "message": "Normal mode"

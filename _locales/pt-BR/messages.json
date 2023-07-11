@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Atalho para iniciar o gerenciador de perfil"
     },
@@ -39,7 +42,7 @@
         "message": "Sempre fechar o perfil atual"
     },
     "confirmSafeMode": {
-        "message": "Para executar o profilemanager em modo seguro, o perfil corrente\\\\nserá automaticamente fechado. Deseja continuar?"
+        "message": "Para executar o profilemanager em modo seguro, o perfil corrente será automaticamente fechado. Deseja continuar?"
     },
     "control": {
         "message": "control"
@@ -138,7 +141,7 @@
         "message": "não"
     },
     "noexecfile": {
-        "message": "Impossível encontrar o arquivo executável.\\nPara corrigir isto, configure um caminho válido nas opções."
+        "message": "Impossível encontrar o arquivo executável. Para corrigir isto, configure um caminho válido nas opções."
     },
     "normalmode": {
         "message": "Modo normal"

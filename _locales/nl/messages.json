@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Snelkoppeling om de profielbeheerder te starten"
     },
@@ -39,7 +42,7 @@
         "message": "Het huidige profiel altijd afsluiten"
     },
     "confirmSafeMode": {
-        "message": "Om de profielbeheerder in veilige modus te laten draaien wordt\\nhet huidige profiel automatisch gesloten. Wilt u doorgaan?"
+        "message": "Om de profielbeheerder in veilige modus te laten draaien wordt het huidige profiel automatisch gesloten. Wilt u doorgaan?"
     },
     "control": {
         "message": "control"
@@ -138,7 +141,7 @@
         "message": "nee"
     },
     "noexecfile": {
-        "message": "Fout: uitvoerbaar bestand niet gevonden.\\nStel een geldig pad in in het optiesvenster om dit te herstellen."
+        "message": "Fout: uitvoerbaar bestand niet gevonden. Stel een geldig pad in in het optiesvenster om dit te herstellen."
     },
     "normalmode": {
         "message": "Normale modus"

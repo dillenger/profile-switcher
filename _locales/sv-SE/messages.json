@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Kortkommando för att öppna profilhanteraren"
     },
@@ -39,7 +42,7 @@
         "message": "Stäng alltid den aktuella profilen"
     },
     "confirmSafeMode": {
-        "message": "För att kunna köra Profilhanteraren i felsäkert läge, kommer den nuvarande\\\\nprofilen automatiskt att stängas. Vill du fortsätta?"
+        "message": "För att kunna köra Profilhanteraren i felsäkert läge, kommer den nuvarande profilen automatiskt att stängas. Vill du fortsätta?"
     },
     "control": {
         "message": "Ctrl"
@@ -138,7 +141,7 @@
         "message": "Nej"
     },
     "noexecfile": {
-        "message": "Det går inte att hitta den körbara filen.\\nFör att åtgärda det här, ange en giltig sökväg i inställningarna."
+        "message": "Det går inte att hitta den körbara filen. För att åtgärda det här, ange en giltig sökväg i inställningarna."
     },
     "normalmode": {
         "message": "Normalt läge"

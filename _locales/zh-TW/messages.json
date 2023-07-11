@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "設定檔管理員啟動捷徑"
     },
@@ -39,7 +42,7 @@
         "message": "總是關閉使用中設定檔"
     },
     "confirmSafeMode": {
-        "message": "為了以安全模式執行設定檔管理員，使用中的設定檔將會自動關閉。\\n確定要繼續嗎？"
+        "message": "為了以安全模式執行設定檔管理員，使用中的設定檔將會自動關閉。 確定要繼續嗎？"
     },
     "control": {
         "message": "ctrl"
@@ -138,7 +141,7 @@
         "message": "否"
     },
     "noexecfile": {
-        "message": "找不到可執行檔。\\n請於選項中設定正確路徑以修正此問題。"
+        "message": "找不到可執行檔。 請於選項中設定正確路徑以修正此問題。"
     },
     "normalmode": {
         "message": "一般模式"

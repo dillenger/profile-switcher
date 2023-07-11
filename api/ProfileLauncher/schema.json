@@ -1,0 +1,53 @@
+[
+  {
+    "namespace": "ProfileLauncher",
+    "functions": [
+      {
+        "name": "openAboutProfiles",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "windowId",
+            "type": "integer"
+          }
+        ]
+      },
+      {
+        "name": "openOptions",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "runExec",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "options",
+            "type": "any"
+          }
+        ]
+      },
+      {
+        "name": "restartWithLog",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "resetMozNoRemote",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      },
+      {
+        "name": "readProfiles",
+        "type": "function",
+        "async": true,
+        "parameters": []
+      }
+    ]
+  }
+]

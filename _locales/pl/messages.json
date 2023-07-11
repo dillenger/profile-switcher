@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Skrót wywołujący menedżera profili"
     },
@@ -39,7 +42,7 @@
         "message": "Zamykaj aktywny profil"
     },
     "confirmSafeMode": {
-        "message": "Uruchomienie menedżera profili w trybie bezpiecznym wymaga zamknięcia obecnego profilu.\\nCzy chcesz kontynuować?"
+        "message": "Uruchomienie menedżera profili w trybie bezpiecznym wymaga zamknięcia obecnego profilu. Czy chcesz kontynuować?"
     },
     "control": {
         "message": "Ctrl"

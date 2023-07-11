@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Combinazione di tasti per il gestore di profili"
     },
@@ -138,7 +141,7 @@
         "message": "no"
     },
     "noexecfile": {
-        "message": "Impossibile trovare il file eseguibile.\\nIndicare un percorso valido manualmente nella finestra delle opzioni."
+        "message": "Impossibile trovare il file eseguibile. Indicare un percorso valido manualmente nella finestra delle opzioni."
     },
     "normalmode": {
         "message": "Modo normale"

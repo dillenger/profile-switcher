@@ -1,8 +1,11 @@
-var PS_bundleService = Components.classes["@mozilla.org/intl/stringbundle;1"]
-	.getService(Components.interfaces.nsIStringBundleService);
-var PS_bundle =  PS_bundleService.createBundle("chrome://profilelauncher/locale/profilelauncher.properties");
+const { ExtensionParent } = ChromeUtils.import("resource://gre/modules/ExtensionParent.jsm");
+const extension = ExtensionParent.GlobalManager.getExtension("pswitcher2@dillinger");
 
 document.addEventListener("dialogaccept", function() {onOK()}); // This replaces ondialogaccept in XUL.
+
+function init() {
+	i18n.updateDocument({extension});
+}
 
 async function pickFile(el) {
 	let fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
@@ -19,11 +22,11 @@ async function pickFile(el) {
 
 function onOK() {
 	if (! document.getElementById("pop3").checked && ! document.getElementById("imap").checked && ! document.getElementById("smtp").checked) {
-		alert(PS_bundle.GetStringFromName("logErrorNoProtocol"));
+		alert(extension.localeData.localizeMessage("logErrorNoProtocol"));
 		return false;
 	}
 	if (! document.getElementById("profPath").value) {
-		alert(PS_bundle.GetStringFromName("logErrorNoPath"));
+		alert(extension.localeData.localizeMessage("logErrorNoPath"));
 		return false;
 	}
 	window.arguments[0].pop3 = document.getElementById("pop3").checked;

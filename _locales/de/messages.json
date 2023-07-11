@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Öffne Profilinformationen"
+    },
     "PMshortcut": {
         "message": "Verknüpfung zum Öffnen des Profilmanagers"
     },
@@ -39,7 +42,7 @@
         "message": "Aktuelles Profil schließen"
     },
     "confirmSafeMode": {
-        "message": "Um den Profilmanager im abgesicherten Modus zu starten, wird das derzeit\\\\nverwendete Profil geschlossen. Möchten Sie fortfahren?"
+        "message": "Um den Profilmanager im abgesicherten Modus zu starten, wird das derzeit verwendete Profil geschlossen. Möchten Sie fortfahren?"
     },
     "control": {
         "message": "Steuerung"

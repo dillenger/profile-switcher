@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Bližnjica za zagon upravitelja profilov"
     },
@@ -39,7 +42,7 @@
         "message": "Vedno zapri trenutni profil"
     },
     "confirmSafeMode": {
-        "message": "Za izvajanje upravitelja profilov v varnem načinu bo trenutni profil\\nsamodejno zaprt. Ali želite nadaljevati?"
+        "message": "Za izvajanje upravitelja profilov v varnem načinu bo trenutni profil samodejno zaprt. Ali želite nadaljevati?"
     },
     "control": {
         "message": "Control"
@@ -138,7 +141,7 @@
         "message": "ne"
     },
     "noexecfile": {
-        "message": "Izvedljive datoteke ni mogoče najti.\\nDa to popravite, v možnostih nastavite veljavno pot."
+        "message": "Izvedljive datoteke ni mogoče najti. Da to popravite, v možnostih nastavite veljavno pot."
     },
     "normalmode": {
         "message": "Običajni način"

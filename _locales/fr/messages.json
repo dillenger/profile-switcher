@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Raccourci pour lancer le gestionnaire de profil"
     },
@@ -39,7 +42,7 @@
         "message": "Toujours quitter le profil courant"
     },
     "confirmSafeMode": {
-        "message": "Pour lancer le gestionnaire de profils en mode sans échec, le profil courant\\nva être automatiquement fermé. Voulez-vous continuer ?"
+        "message": "Pour lancer le gestionnaire de profils en mode sans échec, le profil courant va être automatiquement fermé. Voulez-vous continuer ?"
     },
     "control": {
         "message": "ctrl"
@@ -138,7 +141,7 @@
         "message": "non"
     },
     "noexecfile": {
-        "message": "Fichier exécutable non trouvé.\\nPour régler ce problème, veuillez indiquer un chemin valide dans la fenêtre des options."
+        "message": "Fichier exécutable non trouvé. Pour régler ce problème, veuillez indiquer un chemin valide dans la fenêtre des options."
     },
     "normalmode": {
         "message": "Mode normal"

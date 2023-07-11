@@ -1,31 +1,16 @@
 const Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm");
+const { ExtensionParent } = ChromeUtils.import("resource://gre/modules/ExtensionParent.jsm");
+const extension = ExtensionParent.GlobalManager.getExtension("pswitcher2@dillinger");
 
 var PS_converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]
   .createInstance(Ci.nsIScriptableUnicodeConverter);
 PS_converter.charset = "UTF-8";
+
 var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
-var mynewbundle = Cc["@mozilla.org/intl/stringbundle;1"]
-  .getService(Ci.nsIStringBundleService);
-var mybundle = mynewbundle.createBundle("chrome://profilelauncher/locale/profilelauncher.properties");
 var newInstance;
-//var isTB;
-var sstr = Cc["@mozilla.org/supports-string;1"]
-  .createInstance(Ci.nsISupportsString);
 
-function getComplexPref(pref) {
-  if (prefs.getStringPref)
-    return prefs.getStringPref(pref);
-  else
-    return prefs.getComplexValue(pref, Ci.nsISupportsString).data;
-}
-
-function setComplexPref(pref, value) {
-  if (prefs.setStringPref)
-    prefs.setStringPref(pref, value);
-  else {
-    sstr.data = value;
-    prefs.setComplexValue(pref, Ci.nsISupportsString, sstr);
-  }
+function getOS () {
+  return navigator.platform.toLowerCase();
 }
 
 function convToUnicode(str) {
@@ -36,35 +21,28 @@ function convToUnicode(str) {
   return str;
 }
 
-function insensitive(s1, s2) {
-  var s1lower = s1.toLowerCase();
-  var s2lower = s2.toLowerCase();
-  return s1lower > s2lower ? 1 : (s1lower < s2lower ? -1 : 0);
-}
-
 function initPanel() {
-  document.addEventListener("dialogaccept", function () { savePrefs() }); // This replaces ondialogaccept in XUL.
-  //isTB = navigator.userAgent.indexOf("Thunderbird") > -1;
-  //if (isTB) {
-  document.getElementById("otherOptions").childNodes[1].collapsed = true;
-  document.getElementById("otherOptions").childNodes[2].collapsed = true;
-  //}
+  i18n.updateDocument({extension});
+
+  // This replaces ondialogaccept in XUL.
+  document.addEventListener("dialogaccept", function () { savePrefs() }); 
+  
   if (document.getElementById("titlebar"))
-    document.getElementById("titlebar").label = mybundle.GetStringFromName("titleBar");
+    document.getElementById("titlebar").label = extension.localeData.localizeMessage("titleBar");
   var where = prefs.getIntPref("extensions.profileswitcher.where_show_name");
   if (where == 1)
     document.getElementById("titlebar").checked = false;
   else
     document.getElementById("titlebar").checked = true;
 
-  var defProf = getComplexPref("extensions.profileswitcher.default_profile_name");
+  var defProf = prefs.getStringPref("extensions.profileswitcher.default_profile_name","");
   document.getElementById("currDefProfName").value = convToUnicode(defProf);
 
-  var profile_in_use = getComplexPref("extensions.profileswitcher.profile.in_use");
-  var profilesListPref = getComplexPref("extensions.profileswitcher.profiles.list");
-  var profileButtonLaunch = getComplexPref("extensions.profileswitcher.profile.button_launch");
+  var profile_in_use = prefs.getStringPref("extensions.profileswitcher.profile.in_use","");
+  var profilesListPref = prefs.getStringPref("extensions.profileswitcher.profiles.list","");
+  var profileButtonLaunch = prefs.getStringPref("extensions.profileswitcher.profile.button_launch","");
   var profilesList = profilesListPref.split(",,,");
-  profilesList.sort(insensitive);
+
   var profilePopup = document.getElementById("profiles");
   var sel = null;
   for (var i = 0; i < profilesList.length; i++) {
@@ -84,8 +62,6 @@ function initPanel() {
   document.getElementById("actionlist").selectedIndex = prefs.getIntPref("extensions.profileswitcher.close_before_launch");
   document.getElementById("sbpan").checked = prefs.getBoolPref("extensions.profileswitcher.show_statusbar_panel");
   document.getElementById("tbbutton").checked = prefs.getBoolPref("extensions.profileswitcher.show_toolbar_button");
-  document.getElementById("loadCurrentPage").checked = prefs.getBoolPref("extensions.profileswitcher.load_current_page");
-  document.getElementById("hideMenus").checked = prefs.getBoolPref("extensions.profileswitcher.hide_menus");
   document.getElementById("promptpos").selectedIndex = prefs.getIntPref("extensions.profileswitcher.prompt.buttons_position");
   document.getElementById("no_remote").checked = prefs.getBoolPref("extensions.profileswitcher.onload_reset_noremote");
   document.getElementById("colors").selectedIndex = prefs.getIntPref("extensions.profileswitcher.icon_color");
@@ -106,12 +82,9 @@ function initPanel() {
       document.getElementById("PMalt").checked = true;
   }
 
-  try {
-    document.getElementById("execpath").value = getComplexPref("extensions.profileswitcher.executable_custom_path");
-  }
-  catch (e) { }
+  document.getElementById("execpath").value = prefs.getStringPref("extensions.profileswitcher.executable_custom_path","");
 
-  if (profileSwitcherUtils.os().indexOf("win") > -1) {
+  if (getOS().indexOf("win") > -1) {
     newInstance = false;
     document.getElementById("new_instance").setAttribute("hidden", "true");
   }
@@ -150,12 +123,11 @@ function savePrefs() {
   prefs.setBoolPref("extensions.profileswitcher.show_statusbar_panel", document.getElementById("sbpan").checked);
   prefs.setBoolPref("extensions.profileswitcher.show_toolbar_button", document.getElementById("tbbutton").checked);
   prefs.setBoolPref("extensions.profileswitcher.profiles_sort", document.getElementById("sortProfiles").checked);
-  prefs.setBoolPref("extensions.profileswitcher.load_current_page", false);
   prefs.setIntPref("extensions.profileswitcher.icon_color", document.getElementById("colors").selectedItem.value);
   prefs.setIntPref("extensions.profileswitcher.prompt.buttons_position", document.getElementById("promptpos").selectedItem.value);
 
   if (document.getElementById("execpath").value.length > 2)
-    setComplexPref("extensions.profileswitcher.executable_custom_path", document.getElementById("execpath").value);
+    prefs.setStringPref("extensions.profileswitcher.executable_custom_path", document.getElementById("execpath").value);
   else
     prefs.clearUserPref("extensions.profileswitcher.executable_custom_path");
 
@@ -168,65 +140,9 @@ function savePrefs() {
     if (document.getElementById("PMcontrol").checked)
       shortcut = shortcut + " accel";
     prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", shortcut);
-  }
-  else
+  } else {
     prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", "");
-
-  setComplexPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);
-
-  var hideMenus = document.getElementById("hideMenus").checked;
-  prefs.setBoolPref("extensions.profileswitcher.hide_menus", hideMenus);
-
-
-  // Update TB windows.
-  var enumerator = Services.wm.getEnumerator("mail:3pane")
-  while (enumerator.hasMoreElements()) {
-    var win = enumerator.getNext();
-    if (shortcut.length > 0) {
-      var keyPref = shortcut.split(" ");
-      if (win.document.getElementById("profileSwitcherPMkey"))
-        win.document.getElementById("profileSwitcherPMkey").parentNode.removeChild(win.document.getElementById("profileSwitcherPMkey"));
-
-      if (win.document.getElementById("mailKeys"))
-        var keyset = win.document.getElementById("mailKeys");
-      else
-        var keyset = win.document.getElementById("mainKeyset");
-      var key = win.document.createXULElement("key");
-      var keyPref = shortcut.split(" ");
-      key.setAttribute("id", "profileSwitcherPMkey");
-      key.setAttribute("key", keyPref.shift());
-      key.setAttribute("modifiers", keyPref.toString());
-      key.setAttribute("oncommand", "profileLauncher.runScript()");
-      keyset.appendChild(key);
-    }
-    win.document.getElementById("MFP_PSmenu1").collapsed = hideMenus;
-    win.document.getElementById("MFP_PSmenu2").collapsed = hideMenus;
-    win.document.getElementById("MFP_PSsep1").collapsed = hideMenus;
-    //win.document.getElementById("MFP_PSsep2").collapsed = hideMenus;
-    //if (win.document.getElementById("appmenuPrimaryPane")) {
-    //win.document.getElementById("MFP_PSsep3").collapsed = hideMenus;
-    //win.document.getElementById("MFP_PSmenu3").collapsed = hideMenus;
-    //win.document.getElementById("MFP_PSmenu4").collapsed = hideMenus;
-    //}
-    //if (isTB)
-    var statusbar = win.document.getElementById("statusText");
-    //else if (win.document.getElementById("addon-bar"))
-    //var statusbar = win.document.getElementById("addon-bar");
-    //else
-    //var statusbar = win.document.getElementById("statusbar-display");
-    var profilename = getComplexPref("extensions.profileswitcher.profile.in_use");
-    if (!document.getElementById("sbpan").checked)
-      win.document.getElementById("profileNameSBP").collapsed = true;
-    else {
-      //win.document.getElementById("profileNameLabel").value =  convToUnicode(profilename);
-      win.document.getElementById("profileNameSBP").collapsed = false;
-      win.document.getElementById("profileNameSBP").setAttribute("label", profilename);
-      win.document.getElementById("status-bar").appendChild(win.document.getElementById("profileNameSBP"));
-    }
-    if (!document.getElementById("tbbutton").checked)
-      win.document.getElementById("profSwitcherButtonTB").collapsed = true;
-    else
-      win.document.getElementById("profSwitcherButtonTB").collapsed = false;
-
   }
+
+  prefs.setStringPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);
 }

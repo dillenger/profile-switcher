@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "프로파일 관리자을 불러오기 위한 단축키"
     },
@@ -39,7 +42,7 @@
         "message": "현재 프로파일을 언제나 닫음"
     },
     "confirmSafeMode": {
-        "message": "안전 모드안에서 프로파일 관리자를 실행하도록 명령하면, \\\\n현재 프로파일은 자동으로 닫힙니다. 계속하시겠습니까?"
+        "message": "안전 모드안에서 프로파일 관리자를 실행하도록 명령하면,  현재 프로파일은 자동으로 닫힙니다. 계속하시겠습니까?"
     },
     "control": {
         "message": "control"

@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "启动配置文件管理器的快捷方式"
     },
@@ -39,7 +42,7 @@
         "message": "关闭当前配置文件"
     },
     "confirmSafeMode": {
-        "message": "为了在安全模式运行配置文件管理器，当前配置文件将被自动关闭。\\n要继续吗？"
+        "message": "为了在安全模式运行配置文件管理器，当前配置文件将被自动关闭。 要继续吗？"
     },
     "control": {
         "message": "control"
@@ -138,7 +141,7 @@
         "message": "否"
     },
     "noexecfile": {
-        "message": "无法找到可执行文件。\\n为了修复此问题，请在选项窗口中设置一个有效的路径。"
+        "message": "无法找到可执行文件。 为了修复此问题，请在选项窗口中设置一个有效的路径。"
     },
     "normalmode": {
         "message": "正常模式"

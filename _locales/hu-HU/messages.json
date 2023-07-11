@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Gyorsbillentyű a profil-kezelő elindításához"
     },
@@ -39,7 +42,7 @@
         "message": "A jelenlegi profil bezárása mindig"
     },
     "confirmSafeMode": {
-        "message": "A profilemanager biztonságos módban történő indításakor\\\\na jelenlegi profil automatikusan bezáródik. Folytatja?"
+        "message": "A profilemanager biztonságos módban történő indításakor a jelenlegi profil automatikusan bezáródik. Folytatja?"
     },
     "control": {
         "message": "ctrl"

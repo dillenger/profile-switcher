@@ -1,4 +1,7 @@
 {
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
     "PMshortcut": {
         "message": "Tastă directă pentru lansarea gestionarului de profiluri"
     },
@@ -39,7 +42,7 @@
         "message": "Se închide întotdeauna profilul curent"
     },
     "confirmSafeMode": {
-        "message": "În vedera lansării gestionarului de profiluri în modul sigur,\\nprofilul curent va fi închis automat. Continuați?"
+        "message": "În vedera lansării gestionarului de profiluri în modul sigur, profilul curent va fi închis automat. Continuați?"
     },
     "control": {
         "message": "Control"
@@ -138,7 +141,7 @@
         "message": "Nu"
     },
     "noexecfile": {
-        "message": "Imposibil de găsit programul executabil.\\nPentru a remedia situația, furnizați locația acestuia în caseta de opțiuni."
+        "message": "Imposibil de găsit programul executabil. Pentru a remedia situația, furnizați locația acestuia în caseta de opțiuni."
     },
     "normalmode": {
         "message": "Mod normal"
