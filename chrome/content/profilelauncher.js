@@ -149,8 +149,8 @@ var profileLauncher = {
     var icon2 = "chrome://profilelauncher/content/skin/icons/user"+profileLauncher.prefs.getIntPref("extensions.profileswitcher.icon_color")+".png";
     if (document.getElementById("profileNameIcon"))
       document.getElementById("profileNameIcon").setAttribute("src", icon2);
-    var rule1 = '#profSwitcherButton, #profSwitcherButtonTB  {list-style-image: url("'+icon+'") !important}';
-    var rule2 = 'toolbar[iconsize="small"] #profSwitcherButton, toolbar[iconsize="small"] #profSwitcherButtonTB {list-style-image: url("'+icon2+'") !important}';
+    var rule1 = '#profSwitcherButtonTB {list-style-image: url("'+icon+'") !important}';
+    var rule2 = 'toolbar[iconsize="small"] #profSwitcherButtonTB {list-style-image: url("'+icon2+'") !important}';
     document.styleSheets[0].insertRule(rule1, document.styleSheets[0].cssRules.length);
     document.styleSheets[0].insertRule(rule2, document.styleSheets[0].cssRules.length);
   },
