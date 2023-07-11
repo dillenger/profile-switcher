@@ -1,9 +1,7 @@
-#profSwitcherButton,
 #profSwitcherButtonTB  {
   list-style-image: url("chrome://profilelauncher/content/skin/icons/button0.png");
 }
 
-toolbar[iconsize="small"] #profSwitcherButton,
 toolbar[iconsize="small"] #profSwitcherButtonTB {
   list-style-image: url("chrome://profilelauncher/content/skin/icons/user0.png");
 }
@@ -18,4 +16,8 @@ groupbox.left {
 
 groupbox.right {
   padding: 8px 4px 8px 8px;
+}
+
+#profSwitcherButtonTB .toolbarbutton-menubutton-dropmarker::before {
+  height: unset;
 }
