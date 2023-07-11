@@ -121,19 +121,16 @@ function initPanel() {
   }
 }
 
-function pickFile(el) {
-  var nsIFilePicker = Components.interfaces.nsIFilePicker;
-  var fp = Components.classes["@mozilla.org/filepicker;1"]
-    .createInstance(nsIFilePicker);
-  fp.init(window, "", nsIFilePicker.modeOpen);
-  fp.appendFilters(nsIFilePicker.filterAll);
-  if (fp.show)
-    var res = fp.show();
-  else
-    var res = profileSwitcherUtils.openFPsync(fp);
-  if (res == nsIFilePicker.returnOK) {
-    var box = el.previousSibling;
-    box.value = fp.file.path;
+async function pickFile(el) {
+  let fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
+  fp.init(window, "", Ci.nsIFilePicker.modeOpen);
+  fp.appendFilters(Ci.nsIFilePicker.filterAll);
+
+  let res = await new Promise(resolve => {
+    fp.open(resolve);
+  })
+  if (res == Ci.nsIFilePicker.returnOK) {
+    el.previousSibling.value = fp.file.path;
   }
 }
 
