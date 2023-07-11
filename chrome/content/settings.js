@@ -111,7 +111,7 @@ function initPanel() {
   }
   catch(e) {}
 
-  if (profileSwitcherUtils.os().indexOf("win") > -1 || ! profileSwitcherUtils.is13()) {
+  if (profileSwitcherUtils.os().indexOf("win") > -1) {
     newInstance = false;
     document.getElementById("new_instance").setAttribute("hidden", "true");
   }

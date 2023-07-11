@@ -37,7 +37,6 @@ var profileLauncher = {
     //profileLauncher.getdefaultprofile();
     //profileLauncher.getprofileinuse();
     profileLauncher.os = profileSwitcherUtils.os();
-    profileLauncher.is13 = profileSwitcherUtils.is13();
     profileLauncher.setProfileIcon();
     profileLauncher.migratePrefs();
     profileLauncher.env = Components.classes["@mozilla.org/process/environment;1"]
@@ -363,7 +362,7 @@ var profileLauncher = {
     var args = new Array;
     args.push("-P");
     args.push(prof);
-    if (profileLauncher.is13 && profileLauncher.prefs.getBoolPref("extensions.profileswitcher.enable_new_instance"))
+    if (profileLauncher.prefs.getBoolPref("extensions.profileswitcher.enable_new_instance"))
       args.push("-new-instance");
     else
       args.push("-no-remote");
