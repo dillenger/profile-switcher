@@ -143,15 +143,14 @@ async function init() {
   // User has to use "customize" to remove the button, API cannot hide it.
   //await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.show_toolbar_button", true);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.show_statusbar_panel", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.use_onbeforeunload", false);   // Remove ?
+  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.use_onbeforeunload", false);   // Hidden pref, used?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.onload_reset_noremote", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.arguments_charset", "");
+  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.arguments_charset", "");       // Hidden pref, used?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.enable_new_instance", false);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.prompt.buttons_position", 0);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.icon_color", 0);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profile.button_launch", "-");
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profiles_sort", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.default_profile_name", "");    // Used ?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profile_manager_shortcut", "");
 
   if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.onload_reset_noremote")) {
