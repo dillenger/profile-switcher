@@ -1,9 +1,236 @@
 {
-  "extName": {
-    "message": "Profile Switcher"
-  },
-  
-  "extDesc": {
-    "message": "Ermöglicht den Wechsel zwischen verschiedenen Profilen"
-  }
+    "openAboutProfiles": {
+        "message": "Öffne Profilinformationen"
+    },
+    "PMshortcut": {
+        "message": "Verknüpfung zum Öffnen des Profilmanagers"
+    },
+    "TTtext": {
+        "message": "Name des aktuellen Profils"
+    },
+    "advanced": {
+        "message": "Erweitert"
+    },
+    "advancedLabel1": {
+        "message": "Mit diesen Einstellungen kann das Verhalten des Programms"
+    },
+    "advancedLabel2": {
+        "message": "beim Aufruf durch ein anderes Programm geändert werden."
+    },
+    "alt": {
+        "message": "Alt"
+    },
+    "asPanel": {
+        "message": "Rechts in der Statusleiste"
+    },
+    "asPanelLeft": {
+        "message": "Links in der Statusleiste"
+    },
+    "asTooltip": {
+        "message": "Als Tooltip der Statusleiste"
+    },
+    "askalways": {
+        "message": "Immer nachfragen"
+    },
+    "blue": {
+        "message": "Blau"
+    },
+    "browse": {
+        "message": "Durchsuchen"
+    },
+    "closealways": {
+        "message": "Aktuelles Profil schließen"
+    },
+    "confirmSafeMode": {
+        "message": "Um den Profilmanager im abgesicherten Modus zu starten, wird das derzeit verwendete Profil geschlossen. Möchten Sie fortfahren?"
+    },
+    "control": {
+        "message": "Steuerung"
+    },
+    "currentDefProf": {
+        "message": "Derzeitiges Standardprofil:"
+    },
+    "disableButtonRun": {
+        "message": "Keins"
+    },
+    "dontclose": {
+        "message": "Aktuelles Profil nicht schließen"
+    },
+    "emptyDisable": {
+        "message": "Zum Deaktivieren des Feld leerlassen"
+    },
+    "execCaption": {
+        "message": "Anwendungspfad:"
+    },
+    "execLabel": {
+        "message": "Setzen Sie den Anwendungspfad, falls er nicht automatisch gefunden wird"
+    },
+    "extDesc": {
+        "message": "Ermöglicht den Wechsel zwischen verschiedenen Profilen"
+    },
+    "extName": {
+        "message": "Profile Switcher"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Ermöglicht den Wechsel zwischen verschiedenen Profilen bei laufendem Programm und zeigt den Profilnamen in der Statusleiste an"
+    },
+    "fuchsia": {
+        "message": "Fuchsia"
+    },
+    "green": {
+        "message": "Grün"
+    },
+    "hideMenus": {
+        "message": "Menüs ausblenden"
+    },
+    "iconColorLabel": {
+        "message": "Symbolfarbe dieses Profils"
+    },
+    "iconicTooltipLine1": {
+        "message": "Falls Sie das Standardprofil ändern wollen, so öffnen Sie den"
+    },
+    "iconicTooltipLine2": {
+        "message": "Profilmanager, schließen Sie alle verwendeten Profile, wählen Sie das"
+    },
+    "iconicTooltipLine3": {
+        "message": "Profil, welches Sie als Standardprofil verwenden möchten, und starten Sie es."
+    },
+    "iconicTooltipLine4": {
+        "message": "Ein Wechsel des Profils mittels der ProfileSwitcher-Erweiterung"
+    },
+    "iconicTooltipLine5": {
+        "message": "ändert nicht das Standardprofil."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Nur die Schaltfläche in der Symbolleiste verwenden"
+    },
+    "key": {
+        "message": "Taste"
+    },
+    "loadCurrentPage.label": {
+        "message": "Beim Profilwechsel aktuelle Seite in neuem Profil öffnen"
+    },
+    "logDesc": {
+        "message": "Nach dem Klick auf die Schaltfläche &quot;OK&quot; wird das Programm mit aktivierter Protokollierung neu gestartet."
+    },
+    "logDialogTitle": {
+        "message": "Aufzuzeichnende Protokolle"
+    },
+    "logErrorNoPath": {
+        "message": "Es trat ein Fehler auf: Es muss ein Speicherort für die Protokollierungsdatei angegeben werden."
+    },
+    "logErrorNoProtocol": {
+        "message": "Es trat ein Fehler auf: Es muss mindestens ein Protokoll aufgezeichnet werden."
+    },
+    "logFile": {
+        "message": "Protokollierungsdatei"
+    },
+    "logProtocols": {
+        "message": "Protokolle"
+    },
+    "mustRestart": {
+        "message": "Starten Sie zum Aktivieren dieser Einstellung das Programm neu."
+    },
+    "newInstance": {
+        "message": "Zum Öffnen eines neuen Profils 'new_instance' verwenden"
+    },
+    "no": {
+        "message": "Nein"
+    },
+    "noexecfile": {
+        "message": "Es trat ein Fehler auf: Ausführbare Datei nicht gefunden"
+    },
+    "normalmode": {
+        "message": "Normaler Modus"
+    },
+    "openLink": {
+        "message": "Mit anderem Profil öffnen"
+    },
+    "openOptions": {
+        "message": "Einstellungen..."
+    },
+    "optionCaption": {
+        "message": "Verhalten beim Laden eines anderen Profils oder des Profil-Managers:"
+    },
+    "otherCaption": {
+        "message": "Erweitert"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Beim Klick auf Symbol folgendes Profil öffnen"
+    },
+    "profileManager": {
+        "message": "Profil-Manager"
+    },
+    "profileinuse": {
+        "message": "Aktuelles Profil"
+    },
+    "profiles": {
+        "message": "Benutzerprofile"
+    },
+    "purple": {
+        "message": "Violett"
+    },
+    "quittitle": {
+        "message": "ProfileSwitcher - Bestätigung"
+    },
+    "quityesno": {
+        "message": "Aktuelles Profil beim Umschalten schließen?"
+    },
+    "quityesno2": {
+        "message": "Aktuelles Profil vor dem Öffnen des Profil-Managers beenden?"
+    },
+    "red": {
+        "message": "Rot"
+    },
+    "refresh": {
+        "message": "Liste aktualisieren"
+    },
+    "resetNoremote": {
+        "message": "Variable MOZ_NO_REMOTE beim Start zurücksetzen"
+    },
+    "restartWithLog": {
+        "message": "Mit aktivierter Protokollierung neu starten"
+    },
+    "safemode": {
+        "message": "Abgesicherter Modus"
+    },
+    "shift": {
+        "message": "Umschalt"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "Alphabetische Sortierung von Profilen in Menüs"
+    },
+    "startPM": {
+        "message": "Profil-Manager öffnen…"
+    },
+    "startProf": {
+        "message": "Anderes Profil laden"
+    },
+    "titleBar": {
+        "message": "In der Titelleiste"
+    },
+    "unknownos": {
+        "message": "Dieses Betriebssystem wird nicht unterstützt."
+    },
+    "whereCaption": {
+        "message": "Profilnamen anzeigen:"
+    },
+    "yellow": {
+        "message": "Gelb"
+    },
+    "yes": {
+        "message": "Ja"
+    },
+    "yesnoLabel": {
+        "message": "Position der Schaltflächen im Bestätigungsfenster"
+    }
 }

@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Пречица за покретање управљача профилима"
+    },
+    "TTtext": {
+        "message": "Име тренутног профила"
+    },
+    "advanced": {
+        "message": "Напредно"
+    },
+    "advancedLabel1": {
+        "message": "Овим опцијама можете изменити понашање"
+    },
+    "advancedLabel2": {
+        "message": "програма када га отвори друга апликација"
+    },
+    "alt": {
+        "message": "алт"
+    },
+    "asPanel": {
+        "message": "у статусној траци, десно"
+    },
+    "asPanelLeft": {
+        "message": "у статусној траци, лево"
+    },
+    "asTooltip": {
+        "message": "као балончић у статусној траци"
+    },
+    "askalways": {
+        "message": "увек ме питај шта желим"
+    },
+    "blue": {
+        "message": "плава"
+    },
+    "browse": {
+        "message": "Потражи"
+    },
+    "closealways": {
+        "message": "увек затвори тренутни профил"
+    },
+    "confirmSafeMode": {
+        "message": "Да бисте покренули управљач профилима у безбедном режиму, тренутни профил ће аутоматски бити затворен? Желите ли да наставите?"
+    },
+    "control": {
+        "message": "ктрл"
+    },
+    "currentDefProf": {
+        "message": "Тренутни подразумевани профил."
+    },
+    "disableButtonRun": {
+        "message": "ниједан"
+    },
+    "dontclose": {
+        "message": "никад не затварај тренутни профил"
+    },
+    "emptyDisable": {
+        "message": "Оставите поље празно, ако желите да онемогућите"
+    },
+    "execCaption": {
+        "message": "Путања извршне датотеке:"
+    },
+    "execLabel": {
+        "message": "Ручно поставите путању, ако аутоматско откривање није успело."
+    },
+    "extDesc": {
+        "message": "Додаје опције за покретање других профила"
+    },
+    "extName": {
+        "message": "Промена профила"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Додаје име профила и друге опције за коришћење других у статусну траку"
+    },
+    "fuchsia": {
+        "message": "фуксија"
+    },
+    "green": {
+        "message": "зелена"
+    },
+    "hideMenus": {
+        "message": "Сакриј меније"
+    },
+    "iconColorLabel": {
+        "message": "Боја иконе овог профила"
+    },
+    "iconicTooltipLine1": {
+        "message": "Да бисте променили подразумевани стил, покрените управљач профила"
+    },
+    "iconicTooltipLine2": {
+        "message": "затворити све профиле у употреби, а потом одабрати у управљачу профилима"
+    },
+    "iconicTooltipLine3": {
+        "message": "профил који желите да буде подразумевани и покрените га."
+    },
+    "iconicTooltipLine4": {
+        "message": "Мењање профила помоћу додатка ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "неће променити подразумевани профил."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Користи само дугме у траци са алаткама"
+    },
+    "key": {
+        "message": "Кључ"
+    },
+    "loadCurrentPage.label": {
+        "message": "Отвори профил и учитај тренутну страницу"
+    },
+    "logDesc": {
+        "message": "Притиском на У реду, програм ће се поново покренути са омогућеним евидентирањем."
+    },
+    "logDialogTitle": {
+        "message": "Изаберите протоколе које желите укључити у датотеку евиденције"
+    },
+    "logErrorNoPath": {
+        "message": "Грешка! Изаберите одредиште за датотеку евиденције."
+    },
+    "logErrorNoProtocol": {
+        "message": "Грешка! Изаберите барем протокол који ће бити укључен у датотеку евиденције."
+    },
+    "logFile": {
+        "message": "Датотека евиденције"
+    },
+    "logProtocols": {
+        "message": "Протоколи"
+    },
+    "mustRestart": {
+        "message": "Морате поново покренути програм да бисте омогућили ову опцију"
+    },
+    "newInstance": {
+        "message": "Користи new_instance за покретање других профила"
+    },
+    "no": {
+        "message": "не"
+    },
+    "noexecfile": {
+        "message": "Није могуће пронаћи извршну датотеку. Да бисте ово средили, поставите исправну путању у прозору са опцијама."
+    },
+    "normalmode": {
+        "message": "нормални режим"
+    },
+    "openLink": {
+        "message": "Отвори помоћу другог профила"
+    },
+    "openOptions": {
+        "message": "Опције"
+    },
+    "optionCaption": {
+        "message": "Понашање када покренете други профил или управљач:"
+    },
+    "otherCaption": {
+        "message": "Остале опције"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Профил који ће се покретати кликом на икону"
+    },
+    "profileManager": {
+        "message": "Управљање профилима"
+    },
+    "profileinuse": {
+        "message": "Тренутни профил"
+    },
+    "profiles": {
+        "message": "Профили"
+    },
+    "purple": {
+        "message": "љубичаста"
+    },
+    "quittitle": {
+        "message": "Прозор за потврду промене профила"
+    },
+    "quityesno": {
+        "message": "Затворити тренутни профил приликом мењања?"
+    },
+    "quityesno2": {
+        "message": "Изаћи из тренутног профила пре покретања управљача профилима?"
+    },
+    "red": {
+        "message": "црвена"
+    },
+    "refresh": {
+        "message": "Освежи списак"
+    },
+    "resetNoremote": {
+        "message": "Врати почетну вредност променљиве MOZ_NO_REMOTE на почетку"
+    },
+    "restartWithLog": {
+        "message": "Поново покрени и омогући евидентирање"
+    },
+    "safemode": {
+        "message": "безбедни режим"
+    },
+    "shift": {
+        "message": "шифт"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "У менијима профиле поређај азбучно"
+    },
+    "startPM": {
+        "message": "Отвори управљач профилима"
+    },
+    "startProf": {
+        "message": "Користи други профил"
+    },
+    "titleBar": {
+        "message": "у насловној траци"
+    },
+    "unknownos": {
+        "message": "Није могуће завршити, јер оперативни систем није подржан."
+    },
+    "whereCaption": {
+        "message": "Име профила прикажи:"
+    },
+    "yellow": {
+        "message": "жута"
+    },
+    "yes": {
+        "message": "да"
+    },
+    "yesnoLabel": {
+        "message": "Позиција дугмади у прозору"
+    }
+}

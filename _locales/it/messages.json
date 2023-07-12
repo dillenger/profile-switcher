@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Combinazione di tasti per il gestore di profili"
+    },
+    "TTtext": {
+        "message": "Nome del profilo in uso"
+    },
+    "advanced": {
+        "message": "Avanzate"
+    },
+    "advancedLabel1": {
+        "message": "Con queste opzioni, si può modificare il comportamento"
+    },
+    "advancedLabel2": {
+        "message": "del programma quando è richiamato da altra applicazione"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "In un pannello sulla barra di stato (a destra)"
+    },
+    "asPanelLeft": {
+        "message": "In un pannello sulla barra di stato (a sinistra)"
+    },
+    "asTooltip": {
+        "message": "Come suggerimento sulla barra di stato"
+    },
+    "askalways": {
+        "message": "Chiedi ogni volta che cosa fare"
+    },
+    "blue": {
+        "message": "Blu"
+    },
+    "browse": {
+        "message": "Sfoglia"
+    },
+    "closealways": {
+        "message": "Chiudi sempre il profilo corrente"
+    },
+    "confirmSafeMode": {
+        "message": "Per aprire il gestore dei profili in 'safe-mode', il profilo correntenverrà automaticamente chiuso. Si vuole continuare?"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "Profilo di default attuale:"
+    },
+    "disableButtonRun": {
+        "message": "Nessuno"
+    },
+    "dontclose": {
+        "message": "Non chiudere mai il profilo corrente"
+    },
+    "emptyDisable": {
+        "message": "Lasciare il campo vuoto per disabilitare"
+    },
+    "execCaption": {
+        "message": "Percorso dell'eseguibile:"
+    },
+    "execLabel": {
+        "message": "Indicare un percorso solo se l'auto-rilevamento non funziona"
+    },
+    "extDesc": {
+        "message": "Aggiunge opzioni per avviare altri profili"
+    },
+    "extName": {
+        "message": "Cambia profilo"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Visualizza il nome del profilo in uso e dà la possibilità di lanciare il programma utilizzando altri profili"
+    },
+    "fuchsia": {
+        "message": "Fucsia"
+    },
+    "green": {
+        "message": "Verde"
+    },
+    "hideMenus": {
+        "message": "Nascondi i menù"
+    },
+    "iconColorLabel": {
+        "message": "Colore dell'icona per questo profilo"
+    },
+    "iconicTooltipLine1": {
+        "message": "Per cambiare il profilo di default, avviare il manager dei profili"
+    },
+    "iconicTooltipLine2": {
+        "message": "chiudendo tutti i profili in uso, poi selezionare nel manager dei"
+    },
+    "iconicTooltipLine3": {
+        "message": "profili quello che si vuole rendere di default ed avviarlo."
+    },
+    "iconicTooltipLine4": {
+        "message": "Aprendo i profili attraverso l'estensione ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "il profilo di default non viene modificato."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Usa solo il pulsante nella barra degli strumenti"
+    },
+    "key": {
+        "message": "Tasto"
+    },
+    "loadCurrentPage.label": {
+        "message": "Carica la pagina corrente nel profilo da aprire"
+    },
+    "logDesc": {
+        "message": "Cliccando su OK il programma sarà riavviato con l'attivazione del log, con i parametri scelti."
+    },
+    "logDialogTitle": {
+        "message": "Impostare i parametri per il riavvio con il log"
+    },
+    "logErrorNoPath": {
+        "message": "Errore! Non è stato indicato il file per il log."
+    },
+    "logErrorNoProtocol": {
+        "message": "Errore! Non è stato indicato alcun protocollo da inserire nel log."
+    },
+    "logFile": {
+        "message": "File del log"
+    },
+    "logProtocols": {
+        "message": "Protocolli da inserire nel log"
+    },
+    "mustRestart": {
+        "message": "Necessita del riavvio del programma"
+    },
+    "newInstance": {
+        "message": "Usare 'new_instance' per avviare gli altri profili"
+    },
+    "no": {
+        "message": "no"
+    },
+    "noexecfile": {
+        "message": "Impossibile trovare il file eseguibile. Indicare un percorso valido manualmente nella finestra delle opzioni."
+    },
+    "normalmode": {
+        "message": "Modo normale"
+    },
+    "openLink": {
+        "message": "Apri con un altro profilo"
+    },
+    "openOptions": {
+        "message": "Opzioni"
+    },
+    "optionCaption": {
+        "message": "Quando si apre un altro profilo o il gestore dei profili:"
+    },
+    "otherCaption": {
+        "message": "Altre opzioni"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profilo da aprire quando si clicca l'icona"
+    },
+    "profileManager": {
+        "message": "Gestore dei profili"
+    },
+    "profileinuse": {
+        "message": "Profilo in uso"
+    },
+    "profiles": {
+        "message": "Profili"
+    },
+    "purple": {
+        "message": "Viola"
+    },
+    "quittitle": {
+        "message": "Conferma azione di ProfileSwitcher"
+    },
+    "quityesno": {
+        "message": "Chiudere questo profilo prima di avviare il profilo \"%s\"?"
+    },
+    "quityesno2": {
+        "message": "Chiudere questo profilo prima di avviare il gestore dei profili?"
+    },
+    "red": {
+        "message": "Rosso"
+    },
+    "refresh": {
+        "message": "Aggiorna lista"
+    },
+    "resetNoremote": {
+        "message": "Resettare la variabile MOZ_NO_REMOTE all'avvio"
+    },
+    "restartWithLog": {
+        "message": "Riavvia abilitando il log"
+    },
+    "safemode": {
+        "message": "Safe-mode"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "Nei menù elenca i profili in ordine alfabetico"
+    },
+    "startPM": {
+        "message": "Apri gestore dei profili"
+    },
+    "startProf": {
+        "message": "Apri un altro profilo"
+    },
+    "titleBar": {
+        "message": "Nel nome della finestra"
+    },
+    "unknownos": {
+        "message": "Impossibile eseguire l'operazione: sistema operativo non supportato"
+    },
+    "whereCaption": {
+        "message": "Mostra il nome del profilo:"
+    },
+    "yellow": {
+        "message": "Giallo"
+    },
+    "yes": {
+        "message": "sì"
+    },
+    "yesnoLabel": {
+        "message": "Posizione pulsanti nel prompt"
+    }
+}

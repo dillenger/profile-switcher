@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Gyorsbillentyű a profil-kezelő elindításához"
+    },
+    "TTtext": {
+        "message": "Jelenlegi profil neve"
+    },
+    "advanced": {
+        "message": "Haladó"
+    },
+    "advancedLabel1": {
+        "message": "Ezekkel a beállításokkal módosíthatja a megjelenést,"
+    },
+    "advancedLabel2": {
+        "message": "ha egy másik alkalmazás indítja azt"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "az állapotsorban (jobbra)"
+    },
+    "asPanelLeft": {
+        "message": "az állapotsorban (balra)"
+    },
+    "asTooltip": {
+        "message": "az állapotsor buboréksúgójában"
+    },
+    "askalways": {
+        "message": "Mindig kérdezzen rá a teendőre"
+    },
+    "blue": {
+        "message": "Kék"
+    },
+    "browse": {
+        "message": "Tallózás"
+    },
+    "closealways": {
+        "message": "A jelenlegi profil bezárása mindig"
+    },
+    "confirmSafeMode": {
+        "message": "A profilemanager biztonságos módban történő indításakor a jelenlegi profil automatikusan bezáródik. Folytatja?"
+    },
+    "control": {
+        "message": "ctrl"
+    },
+    "currentDefProf": {
+        "message": "Jelenlegi alapértelmezett profil:"
+    },
+    "disableButtonRun": {
+        "message": "Nincs"
+    },
+    "dontclose": {
+        "message": "Ne zárja be sosem a jelenlegi profilt"
+    },
+    "emptyDisable": {
+        "message": "A deaktiváláshoz hagyja üresen"
+    },
+    "execCaption": {
+        "message": "Futtatható útvonal:"
+    },
+    "execLabel": {
+        "message": "Útvonal megadása, ha az auto-felismerés nem működik"
+    },
+    "extDesc": {
+        "message": "Lehetőségek hozzáadása más profilok indításához"
+    },
+    "extName": {
+        "message": "Profilváltó"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Lehetővé teszi egy másik profil elindítását és a jelenlegi profil nevének megjelenítését az állapotsorban vagy annak buboréksúgójában."
+    },
+    "fuchsia": {
+        "message": "Rózsaszín"
+    },
+    "green": {
+        "message": "Zöld"
+    },
+    "hideMenus": {
+        "message": "Menük elrejtése"
+    },
+    "iconColorLabel": {
+        "message": "Jelenlegi profil ikonjának színe"
+    },
+    "iconicTooltipLine1": {
+        "message": "Az alapértelmezett profil módosításához indítsa el a profil-kezelőt"
+    },
+    "iconicTooltipLine2": {
+        "message": "zárja be a megnyitott profilokat, majd válassza ki a profil-kezelőben"
+    },
+    "iconicTooltipLine3": {
+        "message": "azt a profilt, amelyiket alapértelmezettként szeretne használni."
+    },
+    "iconicTooltipLine4": {
+        "message": "Profil váltása a Profilkezelő kiterjesztés segítségével"
+    },
+    "iconicTooltipLine5": {
+        "message": "nem módosítja az alapértelmezett profilt."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Csak az eszköztár gomb használata"
+    },
+    "key": {
+        "message": "Kulcs"
+    },
+    "loadCurrentPage.label": {
+        "message": "A profil-kezelő töltse be a jelenlegi weboldalt"
+    },
+    "logDesc": {
+        "message": "Az OK gombra kattintva újraindul a program és a naplófájl engedélyezve lesz."
+    },
+    "logDialogTitle": {
+        "message": "Válassza ki, mely protokollok legyenek a naplófájlban"
+    },
+    "logErrorNoPath": {
+        "message": "Hiba! Válassza ki a naplófájl útvonalát."
+    },
+    "logErrorNoProtocol": {
+        "message": "Hiba! Legalább a protokollnak ki kell lennie jelölve a naplófájlban."
+    },
+    "logFile": {
+        "message": "Naplófájl"
+    },
+    "logProtocols": {
+        "message": "Protokollok"
+    },
+    "mustRestart": {
+        "message": "Az opció újraindítás után lesz elérhető"
+    },
+    "newInstance": {
+        "message": "Használjon új FF másolatot egy másik profil indításához"
+    },
+    "no": {
+        "message": "nem"
+    },
+    "noexecfile": {
+        "message": "Hiba: futtatható fájl nem található"
+    },
+    "normalmode": {
+        "message": "Normál mód"
+    },
+    "openLink": {
+        "message": "Megnyitás egy másik profillal"
+    },
+    "openOptions": {
+        "message": "Beállítások"
+    },
+    "optionCaption": {
+        "message": "Profil váltásakor és a profil-kezelő indításakor:"
+    },
+    "otherCaption": {
+        "message": "További beállítások"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profil elindítása kattintással az ikonra"
+    },
+    "profileManager": {
+        "message": "Profil manager"
+    },
+    "profileinuse": {
+        "message": "Jelenlegi profil"
+    },
+    "profiles": {
+        "message": "Profilok"
+    },
+    "purple": {
+        "message": "Lila"
+    },
+    "quittitle": {
+        "message": "Profil váltása - megerősítés"
+    },
+    "quityesno": {
+        "message": "Bezárja a jelenlegi profilt a profil váltásakor?"
+    },
+    "quityesno2": {
+        "message": "Kilépés a jelenlegi profilból a profilemanager indítása előtt?"
+    },
+    "red": {
+        "message": "Piros"
+    },
+    "refresh": {
+        "message": "Lista újratöltése"
+    },
+    "resetNoremote": {
+        "message": "A MOZ_NO_REMOTE változó alapértelmezése indításkor"
+    },
+    "restartWithLog": {
+        "message": "Naplófájl használatához újraindítás szükséges"
+    },
+    "safemode": {
+        "message": "Biztonságos mód"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "Profilok rendezése a menükben abc sorrendben"
+    },
+    "startPM": {
+        "message": "Profil-kezelő megnyitása"
+    },
+    "startProf": {
+        "message": "Váltás másik profilra"
+    },
+    "titleBar": {
+        "message": "A címsorban"
+    },
+    "unknownos": {
+        "message": "Nem lehet végrehajtani: az operációs rendszer nincs támogatva"
+    },
+    "whereCaption": {
+        "message": "A profil nevének megjelenítése:"
+    },
+    "yellow": {
+        "message": "Sárga"
+    },
+    "yes": {
+        "message": "igen"
+    },
+    "yesnoLabel": {
+        "message": "Gombok helyzete rákérdezéskor"
+    }
+}

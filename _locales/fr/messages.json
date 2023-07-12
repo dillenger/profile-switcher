@@ -1,9 +1,236 @@
 {
-  "extName": {
-    "message": "Profile Switcher"
-  },
-  
-  "extDesc": {
-    "message": "Vous permet de lancer de nouveaux profils"
-  }
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Raccourci pour lancer le gestionnaire de profil"
+    },
+    "TTtext": {
+        "message": "Nom du profil courant"
+    },
+    "advanced": {
+        "message": "Avancées"
+    },
+    "advancedLabel1": {
+        "message": "Ces options vous permettent de modifier le comportement"
+    },
+    "advancedLabel2": {
+        "message": "du programme quand une autre application le lance"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "dans la barre de modules (sur la droite)"
+    },
+    "asPanelLeft": {
+        "message": "dans la barre de modules (sur la gauche)"
+    },
+    "asTooltip": {
+        "message": "en infobulle sur la barre d\\'état"
+    },
+    "askalways": {
+        "message": "Toujours demander ce qu'il faut faire"
+    },
+    "blue": {
+        "message": "Bleu"
+    },
+    "browse": {
+        "message": "Parcourir"
+    },
+    "closealways": {
+        "message": "Toujours quitter le profil courant"
+    },
+    "confirmSafeMode": {
+        "message": "Pour lancer le gestionnaire de profils en mode sans échec, le profil courant va être automatiquement fermé. Voulez-vous continuer ?"
+    },
+    "control": {
+        "message": "ctrl"
+    },
+    "currentDefProf": {
+        "message": "Profil par défaut courant :"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "Ne jamais quitter le profil courant"
+    },
+    "emptyDisable": {
+        "message": "Laisser le champ vide pour désactiver"
+    },
+    "execCaption": {
+        "message": "Chemin de l'exécutable :"
+    },
+    "execLabel": {
+        "message": "Précisez le chemin s'il n'est pas repéré automatiquement"
+    },
+    "extDesc": {
+        "message": "Vous permet de lancer de nouveaux profils"
+    },
+    "extName": {
+        "message": "Profile Switcher"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Vous permet de lancer de nouveaux profils et d'afficher leur nom dans la barre d'état (infobulle au survol)"
+    },
+    "fuchsia": {
+        "message": "Fuchsia"
+    },
+    "green": {
+        "message": "Vert"
+    },
+    "hideMenus": {
+        "message": "Masquer les menus"
+    },
+    "iconColorLabel": {
+        "message": "Couleur de l'icône pour ce profil"
+    },
+    "iconicTooltipLine1": {
+        "message": "Pour modifier le profil par défaut, lancez le gestionnaire de profil"
+    },
+    "iconicTooltipLine2": {
+        "message": "fermez tous les profils en cours d'utilisation, puis sélectionnez dans le gestionnaire de profil"
+    },
+    "iconicTooltipLine3": {
+        "message": "celui que vous souhaitez par défaut et lancez-le."
+    },
+    "iconicTooltipLine4": {
+        "message": "Changer de profil avec l'extension ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "ne modifiera pas le profil par défaut."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Utiliser seulement le bouton de la barre personnelle"
+    },
+    "key": {
+        "message": "Touche"
+    },
+    "loadCurrentPage.label": {
+        "message": "Charger la page en cours dès l'ouverture du profil"
+    },
+    "logDesc": {
+        "message": "cliquer sur le bouton OK fera redémarrer le programme avec la journalisation activée"
+    },
+    "logDialogTitle": {
+        "message": "Choisissez les protocoles à inclure dans le fichier de journal"
+    },
+    "logErrorNoPath": {
+        "message": "Erreur ! Choisissez un répertoire des destination pour le fichier de journal"
+    },
+    "logErrorNoProtocol": {
+        "message": "Erreur ! Choisissez au moins un protocole à inclure dans le fichier de journal."
+    },
+    "logFile": {
+        "message": "fichier de journal"
+    },
+    "logProtocols": {
+        "message": "Protocoles"
+    },
+    "mustRestart": {
+        "message": "Vous devez redémarrer le programme pour activer cette option"
+    },
+    "newInstance": {
+        "message": "Utiliser « nouvelle instance » pour lancer les autres profils"
+    },
+    "no": {
+        "message": "non"
+    },
+    "noexecfile": {
+        "message": "Fichier exécutable non trouvé. Pour régler ce problème, veuillez indiquer un chemin valide dans la fenêtre des options."
+    },
+    "normalmode": {
+        "message": "Mode normal"
+    },
+    "openLink": {
+        "message": "Ouvrir avec un autre profil"
+    },
+    "openOptions": {
+        "message": "Options"
+    },
+    "optionCaption": {
+        "message": "Comportement lorsque vous lancez un autre profil ou le gestionnaire de profils :"
+    },
+    "otherCaption": {
+        "message": "Autres options"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profile to launch by clicking the icon"
+    },
+    "profileManager": {
+        "message": "Profile manager"
+    },
+    "profileinuse": {
+        "message": "Profil courant"
+    },
+    "profiles": {
+        "message": "Profils"
+    },
+    "purple": {
+        "message": "Pourpre"
+    },
+    "quittitle": {
+        "message": "Fenêtre de confirmation de ProfileSwitcher"
+    },
+    "quityesno": {
+        "message": "Désirez-vous quitter votre profil en cours ?"
+    },
+    "quityesno2": {
+        "message": "Quit the current profile before launching the profile manager?"
+    },
+    "red": {
+        "message": "Rouge"
+    },
+    "refresh": {
+        "message": "Rafraîchir la liste"
+    },
+    "resetNoremote": {
+        "message": "Restaurer la variable MOZ_NO_REMOTE au démarrage"
+    },
+    "restartWithLog": {
+        "message": "Redémarrer en activant le journal"
+    },
+    "safemode": {
+        "message": "Mode sans échec"
+    },
+    "shift": {
+        "message": "maj"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "In menus sort profiles alphabetically"
+    },
+    "startPM": {
+        "message": "Ouvrir le gestionnaire de profils"
+    },
+    "startProf": {
+        "message": "Lancer un nouveau profil"
+    },
+    "titleBar": {
+        "message": "Dans la barre de titre"
+    },
+    "unknownos": {
+        "message": "Requête impossible à satisfaire : votre système d'exploitation n'est pas pris en charge"
+    },
+    "whereCaption": {
+        "message": "Afficher le nom du profil :"
+    },
+    "yellow": {
+        "message": "Jaune"
+    },
+    "yes": {
+        "message": "oui"
+    },
+    "yesnoLabel": {
+        "message": "Position des boutons dans l'invite"
+    }
 }

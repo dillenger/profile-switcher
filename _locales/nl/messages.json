@@ -1,9 +1,236 @@
 {
-  "extName": {
-    "message": "Profile Switcher"
-  },
-  
-  "extDesc": {
-    "message": "Biedt opties om andere profielen te starten"
-  }
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Snelkoppeling om de profielbeheerder te starten"
+    },
+    "TTtext": {
+        "message": "Huidige profielnaam"
+    },
+    "advanced": {
+        "message": "Geavanceerd"
+    },
+    "advancedLabel1": {
+        "message": "Met deze opties kunt u het gedrag van het programma"
+    },
+    "advancedLabel2": {
+        "message": "als het wordt aangeroepen door een andere toepassing wijzigen"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "in een venster in de statusbalk"
+    },
+    "asPanelLeft": {
+        "message": "in een statusbalkvenster (links)"
+    },
+    "asTooltip": {
+        "message": "als tooltip in de statusbalk"
+    },
+    "askalways": {
+        "message": "Altijd vragen"
+    },
+    "blue": {
+        "message": "Blauw"
+    },
+    "browse": {
+        "message": "Bladeren"
+    },
+    "closealways": {
+        "message": "Het huidige profiel altijd afsluiten"
+    },
+    "confirmSafeMode": {
+        "message": "Om de profielbeheerder in veilige modus te laten draaien wordt het huidige profiel automatisch gesloten. Wilt u doorgaan?"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "Huidige standaardprofiel:"
+    },
+    "disableButtonRun": {
+        "message": "Geen"
+    },
+    "dontclose": {
+        "message": "Het huidige profiel nooit afsluiten"
+    },
+    "emptyDisable": {
+        "message": "Laat veld leeg om uit te schakelen"
+    },
+    "execCaption": {
+        "message": "Pad uitvoerbaar bestand:"
+    },
+    "execLabel": {
+        "message": "Stel alleen een pad in als de automatische detectie niet werkt"
+    },
+    "extDesc": {
+        "message": "Biedt opties om andere profielen te starten"
+    },
+    "extName": {
+        "message": "Profile Switcher"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Voegt profielnamen toe aan een tooltip in de statusbalk en biedt opties om andere profielen te starten"
+    },
+    "fuchsia": {
+        "message": "Fuchsia"
+    },
+    "green": {
+        "message": "Groen"
+    },
+    "hideMenus": {
+        "message": "Menu’s verbergen"
+    },
+    "iconColorLabel": {
+        "message": "Pictogramkleur voor dit profiel"
+    },
+    "iconicTooltipLine1": {
+        "message": "Start om het standaardprofiel te wijzigen de profielbeheerder"
+    },
+    "iconicTooltipLine2": {
+        "message": "om alle gebruikte profielen te sluiten, selecteer vervolgens in de profielbeheerder"
+    },
+    "iconicTooltipLine3": {
+        "message": "het profiel dat u als standaard wilt instellen en start het."
+    },
+    "iconicTooltipLine4": {
+        "message": "Profiel wisselen via ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "wijzigt het standaardprofiel niet."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Alleen werkbalkknop gebruiken"
+    },
+    "key": {
+        "message": "Toets"
+    },
+    "loadCurrentPage.label": {
+        "message": "Profiel openen met de huidige pagina"
+    },
+    "logDesc": {
+        "message": "Na klikken op OK wordt het programma herstart met logging ingeschakeld."
+    },
+    "logDialogTitle": {
+        "message": "Selecteer de in het logbestand op te nemen protocollen"
+    },
+    "logErrorNoPath": {
+        "message": "Fout! Kies een bestemming voor het logbestand."
+    },
+    "logErrorNoProtocol": {
+        "message": "Fout! Selecteer ten minste één in het logbestand op te nemen protocol."
+    },
+    "logFile": {
+        "message": "Logbestand"
+    },
+    "logProtocols": {
+        "message": "Protocollen"
+    },
+    "mustRestart": {
+        "message": "U dient het programma te herstarten om deze optie in te schakelen"
+    },
+    "newInstance": {
+        "message": "‘new_instance’ gebruiken om de overige profielen te starten"
+    },
+    "no": {
+        "message": "nee"
+    },
+    "noexecfile": {
+        "message": "Fout: uitvoerbaar bestand niet gevonden. Stel een geldig pad in in het optiesvenster om dit te herstellen."
+    },
+    "normalmode": {
+        "message": "Normale modus"
+    },
+    "openLink": {
+        "message": "Openen met ander profiel"
+    },
+    "openOptions": {
+        "message": "Opties"
+    },
+    "optionCaption": {
+        "message": "Gedrag bij starten ander profiel of profielbeheerder:"
+    },
+    "otherCaption": {
+        "message": "Overige opties"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Te starten profiel bij aanklikken pictogram"
+    },
+    "profileManager": {
+        "message": "Profielbeheerder"
+    },
+    "profileinuse": {
+        "message": "Huidige profiel"
+    },
+    "profiles": {
+        "message": "Profielen"
+    },
+    "purple": {
+        "message": "Paars"
+    },
+    "quittitle": {
+        "message": "ProfileSwitcher-bevestiging"
+    },
+    "quityesno": {
+        "message": "Huidige profiel sluiten voordat profiel “%s” wordt gestart?"
+    },
+    "quityesno2": {
+        "message": "Huidige profiel sluiten voordat profielbeheerder wordt gestart?"
+    },
+    "red": {
+        "message": "Rood"
+    },
+    "refresh": {
+        "message": "Lijst vernieuwen"
+    },
+    "resetNoremote": {
+        "message": "Variabele MOZ_NO_REMOTE resetten bij starten"
+    },
+    "restartWithLog": {
+        "message": "Herstarten met logging ingeschakeld"
+    },
+    "safemode": {
+        "message": "Veilige modus"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "Profielen alfabetisch sorteren in menu’s"
+    },
+    "startPM": {
+        "message": "Profielbeheerder openen"
+    },
+    "startProf": {
+        "message": "Ander profiel starten"
+    },
+    "titleBar": {
+        "message": "In de titelbalk"
+    },
+    "unknownos": {
+        "message": "Kan niet uitvoeren: besturingssysteem wordt niet ondersteund"
+    },
+    "whereCaption": {
+        "message": "Profielnaam weergeven:"
+    },
+    "yellow": {
+        "message": "Geel"
+    },
+    "yes": {
+        "message": "ja"
+    },
+    "yesnoLabel": {
+        "message": "Positie knoppen in venster"
+    }
 }

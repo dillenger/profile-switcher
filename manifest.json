@@ -3,23 +3,54 @@
   "name": "__MSG_extName__",
   "description": "__MSG_extDesc__",
   "default_locale": "en-US",
-  "version": "3.1",
+  "version": "3.2",
   "author": "Dillinger",
   "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/profile-switcher/",
   "experiment_apis": {
     "WindowListener": {
-      "schema": "chrome/content/api/WindowListener/schema.json",
+      "schema": "api/WindowListener/schema.json",
       "parent": {
         "scopes": ["addon_parent"],
         "paths": [["WindowListener"]],
-        "script": "chrome/content/api/WindowListener/implementation.js"
+        "script": "api/WindowListener/implementation.js"
+      }
+    },
+    "ProfileLauncher": {
+      "schema": "api/ProfileLauncher/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["ProfileLauncher"]],
+        "script": "api/ProfileLauncher/implementation.js"
+      }
+    },
+    "LegacyPrefs": {
+      "schema": "api/LegacyPrefs/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["LegacyPrefs"]],
+        "script": "api/LegacyPrefs/implementation.js"
       }
     }
   },
+  "browser_action": {
+    "type": "menu",
+    "default_label": "",
+    "allowed_spaces": []
+  },
+  "permissions": [
+    "menus", "storage"
+  ],
   "background": {
     "scripts": ["background.js"]
   },
-  "applications": {
+  "commands": {
+    "Profile Manager": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      }
+    }
+  },  
+  "browser_specific_settings": {
     "gecko": {
       "id": "pswitcher2@dillinger",
       "strict_min_version": "111.0",

@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Atalho para iniciar o gerenciador de perfil"
+    },
+    "TTtext": {
+        "message": "Nome do profile corrente"
+    },
+    "advanced": {
+        "message": "Avançado"
+    },
+    "advancedLabel1": {
+        "message": "Com essas opções você irá alterar o comportamento"
+    },
+    "advancedLabel2": {
+        "message": "do programa quando for chamado por outra aplicação"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "no painel de barra de status"
+    },
+    "asPanelLeft": {
+        "message": "No painel da barra de status (na esquerda)"
+    },
+    "asTooltip": {
+        "message": "como dica na barra de status"
+    },
+    "askalways": {
+        "message": "Sempre perguntar o que fazer"
+    },
+    "blue": {
+        "message": "Azul"
+    },
+    "browse": {
+        "message": "Navegar"
+    },
+    "closealways": {
+        "message": "Sempre fechar o perfil atual"
+    },
+    "confirmSafeMode": {
+        "message": "Para executar o profilemanager em modo seguro, o perfil corrente será automaticamente fechado. Deseja continuar?"
+    },
+    "control": {
+        "message": "control"
+    },
+    "currentDefProf": {
+        "message": "Profile corrente padrão:"
+    },
+    "disableButtonRun": {
+        "message": "Nenhum"
+    },
+    "dontclose": {
+        "message": "Nunca fechar o perfil atual"
+    },
+    "emptyDisable": {
+        "message": "Deixe o campo em branco para desabilitar"
+    },
+    "execCaption": {
+        "message": "Caminho do arquivo executável:"
+    },
+    "execLabel": {
+        "message": "Configurar um caminho quando a auto detecção não funcionar"
+    },
+    "extDesc": {
+        "message": "Adiciona opções para iniciar outros perfis"
+    },
+    "extName": {
+        "message": "Alternador de perfil"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Adicionar nome do perfil na barra de status e iniciar opções para outros perfis"
+    },
+    "fuchsia": {
+        "message": "Fúcsia"
+    },
+    "green": {
+        "message": "Verde"
+    },
+    "hideMenus": {
+        "message": "Esconder menus"
+    },
+    "iconColorLabel": {
+        "message": "Cor do ícone para esse perfil"
+    },
+    "iconicTooltipLine1": {
+        "message": "Para alterar o profile padrão, iniciar o gerenciador do profile"
+    },
+    "iconicTooltipLine2": {
+        "message": "fechando todos os profiles em uso, então selecione o gerenciador do profile"
+    },
+    "iconicTooltipLine3": {
+        "message": "o profile que você quer como padrão e inicie."
+    },
+    "iconicTooltipLine4": {
+        "message": "Alternando profile através da extensão ProfileSwitcher"
+    },
+    "iconicTooltipLine5": {
+        "message": "não será alterado o profile padrão."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Usar somente o botão de barra de ferramentas"
+    },
+    "key": {
+        "message": "Key"
+    },
+    "loadCurrentPage.label": {
+        "message": "Abrir perfil carregando a página atual"
+    },
+    "logDesc": {
+        "message": "Clicando no botão OK o programa será reiniciado com o log habilitado."
+    },
+    "logDialogTitle": {
+        "message": "Selecionar os protocolos a serem incluídos no arquivo de log"
+    },
+    "logErrorNoPath": {
+        "message": "Erro! Selecione um destino para o arquivo de log."
+    },
+    "logErrorNoProtocol": {
+        "message": "Erro! Selecione ao menos um protocolo para ser incluído no arquivo de log."
+    },
+    "logFile": {
+        "message": "Arquivo de log"
+    },
+    "logProtocols": {
+        "message": "Protocolos"
+    },
+    "mustRestart": {
+        "message": "Você necessita reiniciar o programa para habilitar essa opção"
+    },
+    "newInstance": {
+        "message": "Usar &quot;nova_instância&quot; para iniciar outros perfils"
+    },
+    "no": {
+        "message": "não"
+    },
+    "noexecfile": {
+        "message": "Impossível encontrar o arquivo executável. Para corrigir isto, configure um caminho válido nas opções."
+    },
+    "normalmode": {
+        "message": "Modo normal"
+    },
+    "openLink": {
+        "message": "Abrir com outro perfil"
+    },
+    "openOptions": {
+        "message": "Opções"
+    },
+    "optionCaption": {
+        "message": "Comportamento quando você executar outro perfil ou gerenciador de perfil:"
+    },
+    "otherCaption": {
+        "message": "Outras opções"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Lançar o perfil, clicando no ícone"
+    },
+    "profileManager": {
+        "message": "Gerenciar perfil"
+    },
+    "profileinuse": {
+        "message": "Perfil atual"
+    },
+    "profiles": {
+        "message": "Perfis"
+    },
+    "purple": {
+        "message": "Roxo"
+    },
+    "quittitle": {
+        "message": "Confirmar ações do ProfileSwitcher"
+    },
+    "quityesno": {
+        "message": "Fechar perfil atual quando trocar?"
+    },
+    "quityesno2": {
+        "message": "Saia do perfil atual antes de abrir o gerenciador de perfis?"
+    },
+    "red": {
+        "message": "Vermelho"
+    },
+    "refresh": {
+        "message": "Atualizar lista"
+    },
+    "resetNoremote": {
+        "message": "Reiniciar a variável MOZ_NO_REMOTE no início"
+    },
+    "restartWithLog": {
+        "message": "Reiniciar a habilitação do log"
+    },
+    "safemode": {
+        "message": "Modo Seguro"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "Ordenar alfabeticamente o menu de perfis"
+    },
+    "startPM": {
+        "message": "Abrir gerenciador de perfil"
+    },
+    "startProf": {
+        "message": "Inciar outro perfil"
+    },
+    "titleBar": {
+        "message": "Na barra de título"
+    },
+    "unknownos": {
+        "message": "Não foi possível executar: sistema operacional não suportado"
+    },
+    "whereCaption": {
+        "message": "Mostrar nome de perfil:"
+    },
+    "yellow": {
+        "message": "Amarelo"
+    },
+    "yes": {
+        "message": "sim"
+    },
+    "yesnoLabel": {
+        "message": "Posição dos botões no prompt"
+    }
+}

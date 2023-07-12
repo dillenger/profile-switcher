@@ -1,32 +1,32 @@
-var PS_bundleService = Components.classes["@mozilla.org/intl/stringbundle;1"]
-	.getService(Components.interfaces.nsIStringBundleService);
-var PS_bundle =  PS_bundleService.createBundle("chrome://profilelauncher/locale/profilelauncher.properties");
+const { ExtensionParent } = ChromeUtils.import("resource://gre/modules/ExtensionParent.jsm");
+const extension = ExtensionParent.GlobalManager.getExtension("pswitcher2@dillinger");
 
 document.addEventListener("dialogaccept", function() {onOK()}); // This replaces ondialogaccept in XUL.
 
-function pickFile(el) {
-	var nsIFilePicker = Components.interfaces.nsIFilePicker;
-	var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
-	fp.init(window, "", nsIFilePicker.modeSave);
+function init() {
+	i18n.updateDocument({extension});
+}
+
+async function pickFile(el) {
+	let fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
+	fp.init(window, "", Ci.nsIFilePicker.modeSave);
 	fp.defaultString = "Thunderbird.moz_log";
 	fp.appendFilter("moz_log", "*.moz_log");
-	if (fp.show)
-		var res = fp.show();
-	else
-		var res = profileSwitcherUtils.openFPsync(fp);
-	if (res == nsIFilePicker.returnOK || res == nsIFilePicker.returnReplace) {
-		var box = el.previousSibling;
-		box.value = fp.file.path;
+	let res = await new Promise(resolve => {
+		fp.open(resolve);
+	})
+	if (res == Ci.nsIFilePicker.returnOK) {
+		el.previousSibling.value = fp.file.path;
 	}
 }
 
 function onOK() {
 	if (! document.getElementById("pop3").checked && ! document.getElementById("imap").checked && ! document.getElementById("smtp").checked) {
-		alert(PS_bundle.GetStringFromName("logErrorNoProtocol"));
+		alert(extension.localeData.localizeMessage("logErrorNoProtocol"));
 		return false;
 	}
 	if (! document.getElementById("profPath").value) {
-		alert(PS_bundle.GetStringFromName("logErrorNoPath"));
+		alert(extension.localeData.localizeMessage("logErrorNoPath"));
 		return false;
 	}
 	window.arguments[0].pop3 = document.getElementById("pop3").checked;

@@ -1,29 +1,30 @@
 <?xml version="1.0"?>
-<!DOCTYPE dialog SYSTEM "chrome://profilelauncher/locale/profilelauncher.dtd">
+<!DOCTYPE dialog>
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
 
-<dialog id="logDialog" title="&logDialogTitle;"
+<dialog id="logDialog" title="__MSG_logDialogTitle__"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml"
         buttons="accept,cancel"
+        onload="init();"
         style="padding:20px">
 
-<script type="application/x-javascript" src="chrome://profilelauncher/content/logDialog.js" />
-<script type="application/x-javascript" src="chrome://profilelauncher/content/utils.js" />
+        <script type="application/x-javascript" src="chrome://profilelauncher/content/i18n.js" />
+        <script type="application/x-javascript" src="chrome://profilelauncher/content/logDialog.js" />
 <script src="chrome://global/content/globalOverlay.js" />
 <script src="chrome://global/content/editMenuOverlay.js" />
 
 <hbox align="center">
-  <label value="&logProtocols;:" />
-  <checkbox id="pop3" label="&pop3;" checked="true" />
-  <checkbox id="imap" label="&imap;" checked="true" />
-  <checkbox id="smtp" label="&smtp;" checked="true" />
+  <label value="__MSG_logProtocols__:" />
+  <checkbox id="pop3" label="__MSG_pop3__" checked="true" />
+  <checkbox id="imap" label="__MSG_imap__" checked="true" />
+  <checkbox id="smtp" label="__MSG_smtp__" checked="true" />
 </hbox>
 <hbox align="center" style="display:flex">
-  <label value="&logFile;:" />
+  <label value="__MSG_logFile__:" />
   <html:input id="profPath" flex="1" style="width:100%" />
-  <button label="&browse;" oncommand="pickFile(this)" />
+  <button label="__MSG_browse__" oncommand="pickFile(this)" />
 </hbox>
 <hbox align="center">
-  <description>&logDesc;</description>
+  <description>__MSG_logDesc__</description>
 </hbox>
 </dialog>

@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "Skrót wywołujący menedżera profili"
+    },
+    "TTtext": {
+        "message": "Nazwa aktywnego profilu"
+    },
+    "advanced": {
+        "message": "Zaawansowane"
+    },
+    "advancedLabel1": {
+        "message": "Za pomocą tych funkcji można zmienić zachowanie"
+    },
+    "advancedLabel2": {
+        "message": "programu, gdy jest on wywoływany przez inną aplikację."
+    },
+    "alt": {
+        "message": "Alt"
+    },
+    "asPanel": {
+        "message": "Na pasku dodatków/stanu po prawej stronie"
+    },
+    "asPanelLeft": {
+        "message": "Na pasku dodatków/stanu po lewej stronie"
+    },
+    "asTooltip": {
+        "message": "Jako powiadomienie po wskazaniu paska dodatków/stanu"
+    },
+    "askalways": {
+        "message": "Pytaj co zrobić"
+    },
+    "blue": {
+        "message": "Niebieski"
+    },
+    "browse": {
+        "message": "Przeglądaj"
+    },
+    "closealways": {
+        "message": "Zamykaj aktywny profil"
+    },
+    "confirmSafeMode": {
+        "message": "Uruchomienie menedżera profili w trybie bezpiecznym wymaga zamknięcia obecnego profilu. Czy chcesz kontynuować?"
+    },
+    "control": {
+        "message": "Ctrl"
+    },
+    "currentDefProf": {
+        "message": "Aktywny domyślny profil:"
+    },
+    "disableButtonRun": {
+        "message": "Brak"
+    },
+    "dontclose": {
+        "message": "Nie zamykaj aktywnego profilu"
+    },
+    "emptyDisable": {
+        "message": "Aby wyłączyć pozostaw pole puste."
+    },
+    "execCaption": {
+        "message": "Ścieżka do pliku wykonywalnego:"
+    },
+    "execLabel": {
+        "message": "Określ ścieżkę tylko, jeśli nie działa automatyczne wykrywanie."
+    },
+    "extDesc": {
+        "message": "Dodaje opcje uruchamiania innych profili"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "Wyświetla nazwę profilu w powiadomieniu paska dodatków/stanu i umożliwia przełączanie profili."
+    },
+    "fuchsia": {
+        "message": "Fuksja"
+    },
+    "green": {
+        "message": "Zielony"
+    },
+    "hideMenus": {
+        "message": "Ukryj menu"
+    },
+    "iconColorLabel": {
+        "message": "Kolor ikony dla tego profilu"
+    },
+    "iconicTooltipLine1": {
+        "message": "Aby zmienić domyślny profil uruchom menadżera profili, zamykając"
+    },
+    "iconicTooltipLine2": {
+        "message": "wszystkie otwarte profile i następnie wybierz żądany profil i"
+    },
+    "iconicTooltipLine3": {
+        "message": "go uruchom."
+    },
+    "iconicTooltipLine4": {
+        "message": "Przełączanie profili za pomocą dodatku ProfileSwitcher nie"
+    },
+    "iconicTooltipLine5": {
+        "message": "powoduje zmiany domyślnego profilu."
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "Używaj tylko przycisku na pasku narzędzi"
+    },
+    "key": {
+        "message": "Klawisz"
+    },
+    "loadCurrentPage.label": {
+        "message": "Otwieraj aktywną stronę w nowo uruchamianym profilu"
+    },
+    "logDesc": {
+        "message": "Po naciśnięciu przycisku OK program zostanie ponownie uruchomiony i dziennik zdarzeń będzie włączony."
+    },
+    "logDialogTitle": {
+        "message": "Wybierz protokoły dołączane do pliku dziennika"
+    },
+    "logErrorNoPath": {
+        "message": "Błąd! Wybierz miejsce przechowywania pliku dziennika."
+    },
+    "logErrorNoProtocol": {
+        "message": "Błąd! Wybierz co najmniej protokół, który będzie zawarty w pliku dziennika."
+    },
+    "logFile": {
+        "message": "Plik dziennika"
+    },
+    "logProtocols": {
+        "message": "Protokoły"
+    },
+    "mustRestart": {
+        "message": "Aby ta funkcja działała, trzeba ponownie uruchomić program."
+    },
+    "nazwa zew": {
+        "message": "Przełącznik profilu"
+    },
+    "newInstance": {
+        "message": "Używaj „new_instance”, by uruchamiać inne profile"
+    },
+    "no": {
+        "message": "Nie"
+    },
+    "noexecfile": {
+        "message": "Błąd! Nie znaleziono pliku wykonywalnego."
+    },
+    "normalmode": {
+        "message": "Tryb normalny"
+    },
+    "openLink": {
+        "message": "Otwórz z innym profilem"
+    },
+    "openOptions": {
+        "message": "Ustawienia"
+    },
+    "optionCaption": {
+        "message": "Gdy jest uruchamiany inny profil lub menedżer profili:"
+    },
+    "otherCaption": {
+        "message": "Inne opcje"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "Profil uruchamiany poprzez klikniecie ikony"
+    },
+    "profileManager": {
+        "message": "Menedżer profili"
+    },
+    "profileinuse": {
+        "message": "Aktualny profil"
+    },
+    "profiles": {
+        "message": "Profile"
+    },
+    "purple": {
+        "message": "Fioletowy"
+    },
+    "quittitle": {
+        "message": "Potwierdzenie zmiany profilu"
+    },
+    "quityesno": {
+        "message": "Zamknąć aktualny profil?"
+    },
+    "quityesno2": {
+        "message": "Czy przed uruchomieniem menedżera profili zamknąć aktualny profil?"
+    },
+    "red": {
+        "message": "Czerwony"
+    },
+    "refresh": {
+        "message": "Odśwież listę"
+    },
+    "resetNoremote": {
+        "message": "Resetuj zmienną MOZ_NO_REMOTE podczas uruchamiania"
+    },
+    "restartWithLog": {
+        "message": "Ponowne uruchomienie włączy dziennik zdarzeń"
+    },
+    "safemode": {
+        "message": "Tryb bezpieczny"
+    },
+    "shift": {
+        "message": "Shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "W menu sortuj profile alfabetycznie"
+    },
+    "startPM": {
+        "message": "Otwórz menedżer profili"
+    },
+    "startProf": {
+        "message": "Uruchom profil…"
+    },
+    "titleBar": {
+        "message": "Na pasku tytułu"
+    },
+    "unknownos": {
+        "message": "Nie można ukończyć. Nieobsługiwany system operacyjny."
+    },
+    "whereCaption": {
+        "message": "Nazwę profilu wyświetlaj:"
+    },
+    "yellow": {
+        "message": "Żółty"
+    },
+    "yes": {
+        "message": "Tak"
+    },
+    "yesnoLabel": {
+        "message": "Położenie przycisków w powiadomieniu"
+    }
+}

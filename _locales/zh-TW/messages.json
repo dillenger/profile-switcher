@@ -1,0 +1,236 @@
+{
+    "openAboutProfiles": {
+        "message": "Open About Profiles"
+    },
+    "PMshortcut": {
+        "message": "設定檔管理員啟動捷徑"
+    },
+    "TTtext": {
+        "message": "使用中設定檔的名稱"
+    },
+    "advanced": {
+        "message": "進階功能"
+    },
+    "advancedLabel1": {
+        "message": "這些選項可以變更程式呼叫其他應用程式"
+    },
+    "advancedLabel2": {
+        "message": "的行為方式"
+    },
+    "alt": {
+        "message": "alt"
+    },
+    "asPanel": {
+        "message": "顯示面板於狀態列右側"
+    },
+    "asPanelLeft": {
+        "message": "顯示面板於狀態列左側"
+    },
+    "asTooltip": {
+        "message": "於狀態列浮出提示說明"
+    },
+    "askalways": {
+        "message": "每次都詢問處理方式"
+    },
+    "blue": {
+        "message": "藍色"
+    },
+    "browse": {
+        "message": "瀏覽"
+    },
+    "closealways": {
+        "message": "總是關閉使用中設定檔"
+    },
+    "confirmSafeMode": {
+        "message": "為了以安全模式執行設定檔管理員，使用中的設定檔將會自動關閉。 確定要繼續嗎？"
+    },
+    "control": {
+        "message": "ctrl"
+    },
+    "currentDefProf": {
+        "message": "目前預設的個人設定檔:"
+    },
+    "disableButtonRun": {
+        "message": "None"
+    },
+    "dontclose": {
+        "message": "永不關閉使用中設定檔"
+    },
+    "emptyDisable": {
+        "message": "清空欄位即可停用此功能"
+    },
+    "execCaption": {
+        "message": "執行檔路徑:"
+    },
+    "execLabel": {
+        "message": "手動設定路徑以防自動偵測失敗"
+    },
+    "extDesc": {
+        "message": "添加啟動其他設定檔的選項"
+    },
+    "extName": {
+        "message": "設定檔切換器"
+    },
+    "extensions.pswitcher2@dillinger.description": {
+        "message": "以狀態列的工具提示顯示個人設定檔的名稱，並增加以其他設定檔執行的選項。"
+    },
+    "fuchsia": {
+        "message": "紫紅"
+    },
+    "green": {
+        "message": "綠色"
+    },
+    "hideMenus": {
+        "message": "隱藏功能表項目"
+    },
+    "iconColorLabel": {
+        "message": "目前設定檔圖示的色彩"
+    },
+    "iconicTooltipLine1": {
+        "message": "若要變更預設的個人設定檔，請開啟設定檔管理員"
+    },
+    "iconicTooltipLine2": {
+        "message": "關閉所有正在使用的設定檔，然後在設定檔管理員內"
+    },
+    "iconicTooltipLine3": {
+        "message": "選擇要作為預設的設定檔並啟動之。"
+    },
+    "iconicTooltipLine4": {
+        "message": "經由 ProfileSwitcher 切換設定檔"
+    },
+    "iconicTooltipLine5": {
+        "message": "不會對預設設定檔造成變更。"
+    },
+    "imap": {
+        "message": "IMAP"
+    },
+    "justButton": {
+        "message": "只使用工具列按鈕"
+    },
+    "key": {
+        "message": "捷徑鍵"
+    },
+    "loadCurrentPage.label": {
+        "message": "啟動其他設定檔時開啟目前頁面"
+    },
+    "logDesc": {
+        "message": "按下確定後，程式會重新啟動並啟用日誌功能"
+    },
+    "logDialogTitle": {
+        "message": "選擇日誌檔中要包含的協定"
+    },
+    "logErrorNoPath": {
+        "message": "有錯誤！請選擇日誌存檔的目標位置。"
+    },
+    "logErrorNoProtocol": {
+        "message": "有錯誤！最少要選擇一種協定給日誌檔記錄。"
+    },
+    "logFile": {
+        "message": "日誌檔"
+    },
+    "logProtocols": {
+        "message": "協定類型"
+    },
+    "mustRestart": {
+        "message": "你必須重新啟動程式讓選項生效"
+    },
+    "newInstance": {
+        "message": "以 'new_instance' 啟動其他個人設定檔"
+    },
+    "no": {
+        "message": "否"
+    },
+    "noexecfile": {
+        "message": "找不到可執行檔。 請於選項中設定正確路徑以修正此問題。"
+    },
+    "normalmode": {
+        "message": "一般模式"
+    },
+    "openLink": {
+        "message": "以其他設定檔開啟"
+    },
+    "openOptions": {
+        "message": "選項"
+    },
+    "optionCaption": {
+        "message": "在啟動其他設定檔或設定檔管理員時:"
+    },
+    "otherCaption": {
+        "message": "其他選項"
+    },
+    "pop3": {
+        "message": "POP3"
+    },
+    "profileButtonCaption": {
+        "message": "點選圖示時要啟動的設定檔"
+    },
+    "profileManager": {
+        "message": "設定檔管理員"
+    },
+    "profileinuse": {
+        "message": "目前設定檔"
+    },
+    "profiles": {
+        "message": "個人設定檔"
+    },
+    "purple": {
+        "message": "紫色"
+    },
+    "quittitle": {
+        "message": "ProfileSwitcher 確認視窗"
+    },
+    "quityesno": {
+        "message": "在切換為設定檔\"%s\"之前要先關閉目前使用的設定檔嗎?"
+    },
+    "quityesno2": {
+        "message": "啟動設定檔管理員之前要先關閉目前使用的設定檔嗎?"
+    },
+    "red": {
+        "message": "紅色"
+    },
+    "refresh": {
+        "message": "重新整理列表"
+    },
+    "resetNoremote": {
+        "message": "啟動時重設 MOZ_NO_REMOTE 這個變數"
+    },
+    "restartWithLog": {
+        "message": "重新啟動後啟用日誌"
+    },
+    "safemode": {
+        "message": "安全模式"
+    },
+    "shift": {
+        "message": "shift"
+    },
+    "smtp": {
+        "message": "SMTP"
+    },
+    "sortProf": {
+        "message": "依字母排序選單內的設定檔"
+    },
+    "startPM": {
+        "message": "開啟設定檔管理員"
+    },
+    "startProf": {
+        "message": "啟動其他設定檔"
+    },
+    "titleBar": {
+        "message": "於標題列"
+    },
+    "unknownos": {
+        "message": "無法執行: 作業系統不支援"
+    },
+    "whereCaption": {
+        "message": "顯示個人設定檔名稱:"
+    },
+    "yellow": {
+        "message": "黃色"
+    },
+    "yes": {
+        "message": "是"
+    },
+    "yesnoLabel": {
+        "message": "確認視窗上的按鈕順序"
+    }
+}
