@@ -24,10 +24,21 @@ async function addMenuEntries(entries, parentId) {
   }
 }
 
+async function getSortedProfileDataFromStorage() {
+  let { profiles, profileIdInUse } = await browser.storage.local.get({ profiles: [], profileIdInUse: null });
+
+  if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.profiles_sort")) {
+    profiles.sort((a, b) => a.name > b.name);
+  } else {
+    profiles.sort((a, b) => a.id > b.id);
+  }
+  return { profiles, profileIdInUse };
+}
+
 // Get current profiles from ini file and update storage/cache.
 async function readProfiles() {
-  let { profileInUse, profiles } = await browser.ProfileLauncher.readProfiles();
-  await browser.storage.local.set({ profileInUse, profiles });
+  let { profileIdInUse, profiles } = await browser.ProfileLauncher.readProfiles();
+  await browser.storage.local.set({ profileIdInUse, profiles });
 }
 
 // Update the icon of the action button (and the statusbar, if important).
@@ -46,8 +57,8 @@ async function updateLabels() {
   // Title, now label of button
   var whereShow = await browser.LegacyPrefs.getPref("extensions.profileswitcher.where_show_name");
   if (whereShow == 0) {
-    let { profiles, profileInUse } = await browser.storage.local.get({ profiles: [], profileInUse: "" });
-    let profile = profiles.find(p => p.id == profileInUse);
+    let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
+    let profile = profiles.find(p => p.id == profileIdInUse);
     await browser.browserAction.setLabel({ label: profile.name });
   } else {
     await browser.browserAction.setLabel({ label: "" });
@@ -61,15 +72,15 @@ async function updateLabels() {
 async function updateMenuEntries() {
   await browser.menus.removeAll();
 
-  let { profiles, profileInUse } = await browser.storage.local.get({ profiles: [], profileInUse: "" });
+  let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
 
   // Rebuild profile menu entries.
   let profileEntries = []
   for (let profile of profiles) {
     profileEntries.push({
       id: `profile-${profile.id}`,
-      label: profileInUse == profile.id ? `${profile.name} (${browser.i18n.getMessage("profileinuse")})` : profile.name,
-      disabled: profileInUse == profile.id
+      label: profileIdInUse == profile.id ? `${profile.name} (${browser.i18n.getMessage("profileinuse")})` : profile.name,
+      disabled: profileIdInUse == profile.id
     })
   }
   profileEntries.push({ id: "sep_profiles", separator: true }, { id: "refresh" });
@@ -186,7 +197,7 @@ async function init() {
         break;
       default:
         if (info.menuItemId.startsWith("profile-")) {
-          let { profiles } = await browser.storage.local.get({ profiles: [] });
+          let { profiles } = await getSortedProfileDataFromStorage();
           let profileId = info.menuItemId.substring(8);
           let profile = profiles.find(p => p.id == profileId)
           if (profile) {

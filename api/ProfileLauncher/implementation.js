@@ -267,8 +267,6 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
           let process = Cc["@mozilla.org/process/util;1"].createInstance(Ci.nsIProcess);
           process.init(execFile);
 
-          console.log(args);
-
           if (quit) {
             let quitDelay = 1000;
             // I'm not sure at 100% that this will work also with very slow computer and
@@ -292,10 +290,9 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
         readProfiles: function () {
           let mainWindow = Services.wm.getMostRecentWindow("mail:3pane");
 
-          var numProf = 0;
           var isRelative = true;
           var profiles = new Array;
-          var profileInUse = "";
+          var profileIdInUse = null;
 
           var os = mainWindow.navigator.platform.toLowerCase();
           // This is the standard "root" directory where the profiles are
@@ -330,7 +327,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
               let myline = lines[i];
 
               if (myline && myline.startsWith("[")) {
-                if (currentName) {
+                if (currentName && currentId != null) {
                   profiles.push({
                     id: currentId,
                     name: currentName,
@@ -339,9 +336,11 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                 }
                 currentName = "";
                 currentPath = "";
-                currentId = myline.substring(1, myline.length - 1);
                 isRelative = true;
-                numProf = numProf + 1;
+                currentId = null;
+                if (myline.startsWith("[Profile")) {
+                  currentId = parseInt(myline.substring(8, myline.length - 1), 10);
+                }
                 continue;
               }
 
@@ -371,8 +370,6 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                   var mylineUNICODE = myline;
                 }
 
-                //if (myline.indexOf("Default=1") > -1)
-                //defaultProfNum = numProf;
                 // On Mac the absolute paths are not in plain text, but encoded in base64 with lots of control chars
                 // and other strange things ... why??? Who knows it!!!!
                 if (os.indexOf("mac") > -1 && !isRelative) {
@@ -384,7 +381,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                     // profile's directory followed by a control char, in this way we shoul avoid "fake positives"
                     var regex = new RegExp(profdirname + "[\\x00-\\x1F]", "gi");
                     if (decodedpath && regex.test(decodedpath)) {
-                      profileInUse = currentId;
+                      profileIdInUse = currentId;
                     }
                     currentPath = decodedpath;
                   }
@@ -393,19 +390,14 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                 // Rule for absolute path on Win and Linux: note the here the match is with the full path
                 // because otherwise it could fail
                 else if (!isRelative && mylineUNICODE == ("Path=" + profdirfullpath)) {
-                  profileInUse = currentId;
+                  profileIdInUse = currentId;
                 }
                 // Normal case with relative path on every os
                 // If the profile's directory is at the end of the line beginning with Path=, we've found the right name
                 else if (isRelative && profRegExp.test(mylineUNICODE)) {
-                  profileInUse = currentId;
+                  profileIdInUse = currentId;
                 }
-                //if (myline && myline.indexOf("Default=1") > -1) {
-                //prefs.setStringPref("extensions.profileswitcher.profile.in_use",tempname);
-                //// prefs.setIntPref("extensions.profileswitcher.default_profile",  numProf);
-                //}
               }
-              // prefs.setIntPref("extensions.profileswitcher.profile.in_use_number", currentProfNum);
             }
 
             if (currentName) {
@@ -416,17 +408,12 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
               })
             }
           }
-          if (prefs.getBoolPref("extensions.profileswitcher.profiles_sort")) {
-            profiles.sort((a, b) => a.name > b.name);
-          } else {
-            profiles.sort((a, b) => a.id > b.id);
-          }
           // We keep setting these prefs only for the settings window to be able
           // to access them. Once the settings window is html and can access
           // local storage, this can be removed
-          prefs.setCharPref("extensions.profileswitcher.profile.in_use", profileInUse);
+          prefs.setCharPref("extensions.profileswitcher.profile.in_use", profiles.find(e => e.id == profileIdInUse).name);
           prefs.setStringPref("extensions.profileswitcher.profiles.list", profiles.map(e => e.name).join(",,,"));
-          return { profileInUse, profiles };
+          return { profileIdInUse, profiles };
         }
       }
     };
