@@ -35,9 +35,6 @@ function initPanel() {
   else
     document.getElementById("titlebar").checked = true;
 
-  var defProf = prefs.getStringPref("extensions.profileswitcher.default_profile_name","");
-  document.getElementById("currDefProfName").value = convToUnicode(defProf);
-
   var profile_in_use = prefs.getStringPref("extensions.profileswitcher.profile.in_use","");
   var profilesListPref = prefs.getStringPref("extensions.profileswitcher.profiles.list","");
   var profileButtonLaunch = prefs.getStringPref("extensions.profileswitcher.profile.button_launch","");

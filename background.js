@@ -24,10 +24,21 @@ async function addMenuEntries(entries, parentId) {
   }
 }
 
+async function getSortedProfileDataFromStorage() {
+  let { profiles, profileIdInUse } = await browser.storage.local.get({ profiles: [], profileIdInUse: null });
+
+  if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.profiles_sort")) {
+    profiles.sort((a, b) => a.name > b.name);
+  } else {
+    profiles.sort((a, b) => a.id > b.id);
+  }
+  return { profiles, profileIdInUse };
+}
+
 // Get current profiles from ini file and update storage/cache.
 async function readProfiles() {
-  let { profileInUse, profiles } = await browser.ProfileLauncher.readProfiles();
-  await browser.storage.local.set({ profileInUse, profiles });
+  let { profileIdInUse, profiles } = await browser.ProfileLauncher.readProfiles();
+  await browser.storage.local.set({ profileIdInUse, profiles });
 }
 
 // Update the icon of the action button (and the statusbar, if important).
@@ -46,8 +57,8 @@ async function updateLabels() {
   // Title, now label of button
   var whereShow = await browser.LegacyPrefs.getPref("extensions.profileswitcher.where_show_name");
   if (whereShow == 0) {
-    let { profiles, profileInUse } = await browser.storage.local.get({ profiles: [], profileInUse: "" });
-    let profile = profiles.find(p => p.id == profileInUse);
+    let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
+    let profile = profiles.find(p => p.id == profileIdInUse);
     await browser.browserAction.setLabel({ label: profile.name });
   } else {
     await browser.browserAction.setLabel({ label: "" });
@@ -61,15 +72,15 @@ async function updateLabels() {
 async function updateMenuEntries() {
   await browser.menus.removeAll();
 
-  let { profiles, profileInUse } = await browser.storage.local.get({ profiles: [], profileInUse: "" });
+  let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
 
   // Rebuild profile menu entries.
   let profileEntries = []
   for (let profile of profiles) {
     profileEntries.push({
       id: `profile-${profile.id}`,
-      label: profileInUse == profile.id ? `${profile.name} (${browser.i18n.getMessage("profileinuse")})` : profile.name,
-      disabled: profileInUse == profile.id
+      label: profileIdInUse == profile.id ? `${profile.name} (${browser.i18n.getMessage("profileinuse")})` : profile.name,
+      disabled: profileIdInUse == profile.id
     })
   }
   profileEntries.push({ id: "sep_profiles", separator: true }, { id: "refresh" });
@@ -143,15 +154,14 @@ async function init() {
   // User has to use "customize" to remove the button, API cannot hide it.
   //await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.show_toolbar_button", true);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.show_statusbar_panel", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.use_onbeforeunload", false);   // Remove ?
+  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.use_onbeforeunload", false);   // Hidden pref, used?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.onload_reset_noremote", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.arguments_charset", "");
+  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.arguments_charset", "");       // Hidden pref, used?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.enable_new_instance", false);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.prompt.buttons_position", 0);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.icon_color", 0);
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profile.button_launch", "-");
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profiles_sort", true);
-  await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.default_profile_name", "");    // Used ?
   await browser.LegacyPrefs.setDefaultPref("extensions.profileswitcher.profile_manager_shortcut", "");
 
   if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.onload_reset_noremote")) {
@@ -187,7 +197,7 @@ async function init() {
         break;
       default:
         if (info.menuItemId.startsWith("profile-")) {
-          let { profiles } = await browser.storage.local.get({ profiles: [] });
+          let { profiles } = await getSortedProfileDataFromStorage();
           let profileId = info.menuItemId.substring(8);
           let profile = profiles.find(p => p.id == profileId)
           if (profile) {
@@ -212,6 +222,44 @@ async function init() {
         updateLabels();
     }
   }, "extensions.profileswitcher.");
+
+  // React to commands/shortcuts being executed.
+  browser.commands.onCommand.addListener(async (command, tab) => {
+    switch (command) {
+      case "Profile Manager":
+        // The command could be disabled in the settings.
+        if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.profile_manager_shortcut")) {
+          browser.ProfileLauncher.runExec({ profileManager: "normalmode" });
+        }
+        break;
+    }
+  })
+
+  // React to commands/shortcuts being updated and update settings.
+  browser.commands.onChanged.addListener(async ({name, oldShortcut, newShortcut}) => {
+    switch (name) {
+      case "Profile Manager":
+        {
+          // Commands API shortcuts: "Alt+Ctrl+5"
+          let modifiers = newShortcut.split("+");
+          let key = modifiers.pop();
+
+          let keys = [key];
+          if (modifiers.includes("Ctrl")) keys.push("accel");
+          if (modifiers.includes("Alt")) keys.push("alt");
+          if (modifiers.includes("Shift")) keys.push("shift");
+
+           // ProfileSwitcher Pref shortcuts: "5 alt accel"
+          let oldPrefShortcut = await browser.LegacyPrefs.getPref("extensions.profileswitcher.profile_manager_shortcut");
+          let newPrefShortcut = keys.join(" ");
+          if (oldPrefShortcut != newPrefShortcut) {
+            await browser.LegacyPrefs.setPref("extensions.profileswitcher.profile_manager_shortcut", newPrefShortcut);
+          }
+        }
+        break;
+    }
+  })
+
 
   // TODO - We need this only for the options page and the logDialog, which are still XHTML. 
   //  - Convert settings.xhtml to HTML and use the options_ui manifest entry to hook
