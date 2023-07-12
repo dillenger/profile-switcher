@@ -212,6 +212,44 @@ async function init() {
     }
   }, "extensions.profileswitcher.");
 
+  // React to commands/shortcuts being executed.
+  browser.commands.onCommand.addListener(async (command, tab) => {
+    switch (command) {
+      case "Profile Manager":
+        // The command could be disabled in the settings.
+        if (await browser.LegacyPrefs.getPref("extensions.profileswitcher.profile_manager_shortcut")) {
+          browser.ProfileLauncher.runExec({ profileManager: "normalmode" });
+        }
+        break;
+    }
+  })
+
+  // React to commands/shortcuts being updated and update settings.
+  browser.commands.onChanged.addListener(async ({name, oldShortcut, newShortcut}) => {
+    switch (name) {
+      case "Profile Manager":
+        {
+          // Commands API shortcuts: "Alt+Ctrl+5"
+          let modifiers = newShortcut.split("+");
+          let key = modifiers.pop();
+
+          let keys = [key];
+          if (modifiers.includes("Ctrl")) keys.push("accel");
+          if (modifiers.includes("Alt")) keys.push("alt");
+          if (modifiers.includes("Shift")) keys.push("shift");
+
+           // ProfileSwitcher Pref shortcuts: "5 alt accel"
+          let oldPrefShortcut = await browser.LegacyPrefs.getPref("extensions.profileswitcher.profile_manager_shortcut");
+          let newPrefShortcut = keys.join(" ");
+          if (oldPrefShortcut != newPrefShortcut) {
+            await browser.LegacyPrefs.setPref("extensions.profileswitcher.profile_manager_shortcut", newPrefShortcut);
+          }
+        }
+        break;
+    }
+  })
+
+
   // TODO - We need this only for the options page and the logDialog, which are still XHTML. 
   //  - Convert settings.xhtml to HTML and use the options_ui manifest entry to hook
   //    it into the add-on manager.
