@@ -25,8 +25,8 @@ function initPanel() {
   i18n.updateDocument({extension});
 
   // This replaces ondialogaccept in XUL.
-  document.addEventListener("dialogaccept", function () { savePrefs() }); 
-  
+  document.addEventListener("dialogaccept", function () { savePrefs() });
+
   if (document.getElementById("titlebar"))
     document.getElementById("titlebar").label = extension.localeData.localizeMessage("titleBar");
   var where = prefs.getIntPref("extensions.profileswitcher.where_show_name");
@@ -129,6 +129,7 @@ function savePrefs() {
     prefs.clearUserPref("extensions.profileswitcher.executable_custom_path");
 
   var shortcut = document.getElementById("PMkey").value;
+  shortcut = shortcut.toUpperCase(); // fix illegal lowercase
   if (shortcut.length > 0) {
     if (document.getElementById("PMshift").checked)
       shortcut = shortcut + " shift";
