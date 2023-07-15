@@ -403,7 +403,7 @@ var WindowListener_102 = class extends ExtensionCommon.ExtensionAPI {
           let url = context.extension.rootURI.resolve(defaultUrl);
 
           let prefsObj = {};
-          prefsObj.Services = ChromeUtils.import(
+          prefsObj.Services = globalThis.Services || ChromeUtils.import(
             "resource://gre/modules/Services.jsm"
           ).Services;
           prefsObj.pref = function (aName, aDefault) {
@@ -1470,7 +1470,7 @@ var WindowListener_115 = class extends ExtensionCommon.ExtensionAPI {
           let url = context.extension.rootURI.resolve(defaultUrl);
 
           let prefsObj = {};
-          prefsObj.Services = ChromeUtils.import(
+          prefsObj.Services = globalThis.Services || ChromeUtils.import(
             "resource://gre/modules/Services.jsm"
           ).Services;
           prefsObj.pref = function (aName, aDefault) {
