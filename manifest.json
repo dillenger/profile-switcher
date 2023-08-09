@@ -49,12 +49,12 @@
         "default": "Ctrl+Shift+P"
       }
     }
-  },  
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "pswitcher2@dillinger",
       "strict_min_version": "115.0",
-      "strict_max_version": "117.*"
+      "strict_max_version": "118.*"
     }
   },
   "icons": {

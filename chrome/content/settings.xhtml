@@ -24,14 +24,14 @@
     <radiogroup id="actionlist">
       <radio id="dontclose" label="__MSG_dontclose__"/>
       <radio id="close" label="__MSG_closealways__"/>
-      <radio id="ask" label="__MSG_askalways__"/>
+      <radio id="ask" label="__MSG_askalways__" collapsed="true"/><!-- disabled until prompt is fixed -->
     </radiogroup>
   </hbox>
 </groupbox>
 
 <groupbox class="left">
   <label class="header">__MSG_whereCaption__</label>
-  <hbox align="center">
+  <hbox align="center" collapsed="true"><!-- disabled until statusbar panel is fixed -->
     <checkbox id="sbpan" label="__MSG_asPanel__"/>
   </hbox>
   <hbox align="center">
@@ -60,7 +60,7 @@
   </hbox>
 </groupbox>
 
-<groupbox class="right">
+<groupbox class="right" collapsed="true"><!-- disabled until prompt is fixed -->
   <label class="header">__MSG_yesnoLabel__</label>
   <hbox align="center">
     <radiogroup id="promptpos" orient="horizontal">
