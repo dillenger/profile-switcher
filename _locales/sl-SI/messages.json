@@ -180,7 +180,7 @@
         "message": "Pogovorno okno za potrditev ProfileSwitcher"
     },
     "quityesno": {
-        "message": "Zapri trenutni profil pred zagonom profila \"%s\"?"
+        "message": "Zapri trenutni profil pred zagonom profila?"
     },
     "quityesno2": {
         "message": "Zapri trenutni profil pred zagonom upravitelja profilov?"

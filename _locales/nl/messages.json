@@ -168,7 +168,7 @@
         "message": "Profielbeheerder"
     },
     "profileinuse": {
-        "message": "Huidige profiel"
+        "message": "Huidig profiel"
     },
     "profiles": {
         "message": "Profielen"
@@ -180,10 +180,10 @@
         "message": "ProfileSwitcher-bevestiging"
     },
     "quityesno": {
-        "message": "Huidige profiel sluiten voordat profiel “%s” wordt gestart?"
+        "message": "Huidig profiel sluiten voordat u overschakelt?"
     },
     "quityesno2": {
-        "message": "Huidige profiel sluiten voordat profielbeheerder wordt gestart?"
+        "message": "Huidig profiel sluiten voordat profielbeheerder wordt gestart?"
     },
     "red": {
         "message": "Rood"

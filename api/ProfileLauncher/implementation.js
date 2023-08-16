@@ -10,9 +10,6 @@ var { ExtensionUtils } = ChromeUtils.import(
 );
 var { ExtensionError } = ExtensionUtils;
 
-var Services = globalThis.Services ||
-  ChromeUtils.import("resource://gre/modules/Services.jsm").Services;
-
 var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
 var env = Cc["@mozilla.org/process/environment;1"].getService(Ci.nsIEnvironment);
 var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]

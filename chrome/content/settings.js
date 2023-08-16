@@ -1,4 +1,3 @@
-const Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm");
 const { ExtensionParent } = ChromeUtils.import("resource://gre/modules/ExtensionParent.jsm");
 const extension = ExtensionParent.GlobalManager.getExtension("pswitcher2@dillinger");
 
@@ -58,7 +57,7 @@ function initPanel() {
 
   document.getElementById("actionlist").selectedIndex = prefs.getIntPref("extensions.profileswitcher.close_before_launch");
   document.getElementById("sbpan").checked = prefs.getBoolPref("extensions.profileswitcher.show_statusbar_panel");
-  document.getElementById("tbbutton").checked = prefs.getBoolPref("extensions.profileswitcher.show_toolbar_button");
+  //document.getElementById("tbbutton").checked = prefs.getBoolPref("extensions.profileswitcher.show_toolbar_button");
   document.getElementById("promptpos").selectedIndex = prefs.getIntPref("extensions.profileswitcher.prompt.buttons_position");
   document.getElementById("no_remote").checked = prefs.getBoolPref("extensions.profileswitcher.onload_reset_noremote");
   document.getElementById("colors").selectedIndex = prefs.getIntPref("extensions.profileswitcher.icon_color");
@@ -69,8 +68,6 @@ function initPanel() {
     var keyPref = shortcut.split(" ");
     document.getElementById("PMkey").value = keyPref.shift();
     var modifiers = keyPref.toString();
-    if (modifiers.indexOf("shift") > -1)
-      document.getElementById("PMshift").checked = true;
     if (modifiers.indexOf("shift") > -1)
       document.getElementById("PMshift").checked = true;
     if (modifiers.indexOf("accel") > -1)
@@ -118,7 +115,7 @@ function savePrefs() {
     prefs.setIntPref("extensions.profileswitcher.where_show_name", 1);
 
   prefs.setBoolPref("extensions.profileswitcher.show_statusbar_panel", document.getElementById("sbpan").checked);
-  prefs.setBoolPref("extensions.profileswitcher.show_toolbar_button", document.getElementById("tbbutton").checked);
+  //prefs.setBoolPref("extensions.profileswitcher.show_toolbar_button", document.getElementById("tbbutton").checked);
   prefs.setBoolPref("extensions.profileswitcher.profiles_sort", document.getElementById("sortProfiles").checked);
   prefs.setIntPref("extensions.profileswitcher.icon_color", document.getElementById("colors").selectedItem.value);
   prefs.setIntPref("extensions.profileswitcher.prompt.buttons_position", document.getElementById("promptpos").selectedItem.value);

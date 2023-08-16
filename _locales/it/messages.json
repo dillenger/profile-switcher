@@ -180,7 +180,7 @@
         "message": "Conferma azione di ProfileSwitcher"
     },
     "quityesno": {
-        "message": "Chiudere questo profilo prima di avviare il profilo \"%s\"?"
+        "message": "Chiudere questo profilo prima di avviare il profilo?"
     },
     "quityesno2": {
         "message": "Chiudere questo profilo prima di avviare il gestore dei profili?"

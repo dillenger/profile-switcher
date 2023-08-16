@@ -4,7 +4,7 @@ async function addMenuEntries(entries, parentId) {
   for (let entry of entries) {
     let config = {
       id: entry.id,
-      contexts: ["browser_action_menu", "tools_menu"],
+      contexts: ["browser_action", "tools_menu"],
     }
     if (entry.separator) {
       config.type = "separator";
@@ -207,6 +207,12 @@ async function init() {
     }
   })
 
+  // React to button clicks.
+  browser.browserAction.onClicked.addListener(async () => {
+    var prof = await browser.LegacyPrefs.getPref("extensions.profileswitcher.profile.button_launch");
+    if (prof && prof != "-") browser.ProfileLauncher.runExec({ profile: prof });
+  });
+
   // React to changes in the options dialog (or wherever the pref is changed).
   browser.LegacyPrefs.onChanged.addListener((name, value) => {
     switch (name) {
@@ -261,7 +267,7 @@ async function init() {
   })
 
 
-  // TODO - We need this only for the options page and the logDialog, which are still XHTML. 
+  // TODO - We need this only for the options page and the logDialog, which are still XHTML.
   //  - Convert settings.xhtml to HTML and use the options_ui manifest entry to hook
   //    it into the add-on manager.
   //  - Keep using LegacyPrefs API to access preferences

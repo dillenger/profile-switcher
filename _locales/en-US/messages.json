@@ -63,7 +63,7 @@
         "message": "Executable path:"
     },
     "execLabel": {
-        "message": "Set a path only if the auto-detection doesn't work"
+        "message": "Set a path here when auto-detection doesn't work"
     },
     "extDesc": {
         "message": "Adds options to launch other profiles"
@@ -114,7 +114,7 @@
         "message": "Open profile loading the current page"
     },
     "logDesc": {
-        "message": "Clicking on OK button the program will be restarted with the log enabled."
+        "message": "Clicking the OK button will restart the program with the log enabled."
     },
     "logDialogTitle": {
         "message": "Select the protocols to be included in the log file"
@@ -180,7 +180,7 @@
         "message": "ProfileSwitcher confirm dialog"
     },
     "quityesno": {
-        "message": "Quit the current profile before launching the profile \"%s\"?"
+        "message": "Quit the current profile before switching profiles?"
     },
     "quityesno2": {
         "message": "Quit the current profile before launching the profile manager?"

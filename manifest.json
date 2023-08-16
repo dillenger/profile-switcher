@@ -33,8 +33,9 @@
     }
   },
   "browser_action": {
-    "type": "menu",
-    "default_label": "",
+    "default_label": "Loading...",
+    "default_title": "Current profile",
+    "default_icon": "chrome/content/skin/icons/button0.png",
     "allowed_spaces": []
   },
   "permissions": [

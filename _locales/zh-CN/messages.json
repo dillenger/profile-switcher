@@ -180,7 +180,7 @@
         "message": "ProfileSwitcher 确认对话框"
     },
     "quityesno": {
-        "message": "切换到“%s”之前关闭当前的配置文件？"
+        "message": "切换前关闭当前配置文件？"
     },
     "quityesno2": {
         "message": "启动“配置文件管理器”前退出当前的配置文件？"

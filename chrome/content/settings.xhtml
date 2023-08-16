@@ -71,7 +71,7 @@
 </groupbox>
 </vbox>
 <vbox>
-<groupbox class="right" collapsed="true"><!-- disabled until action button supports click and menu action -->
+<groupbox class="right">
   <label class="header">__MSG_profileButtonCaption__</label>
   <hbox align="center">
     <menulist id="profiles">
@@ -111,9 +111,11 @@
   <label value="__MSG_emptyDisable__" />
   <hbox align="center">
     <label value="__MSG_key__:" />
-    <checkbox label="__MSG_control__ " id="PMcontrol" />
-    <checkbox label="__MSG_alt__ " id="PMalt" />
-    <checkbox label="__MSG_shift__ " id="PMshift" />
+    <checkbox label="__MSG_control__" id="PMcontrol" />
+    <label value=" " />
+    <checkbox label="__MSG_alt__" id="PMalt" />
+    <label value=" " />
+    <checkbox label="__MSG_shift__" id="PMshift" />
     <label value="+ " />
     <html:input maxlength="1" size="1" id="PMkey" />
   </hbox>

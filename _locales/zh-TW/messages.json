@@ -180,10 +180,10 @@
         "message": "ProfileSwitcher 確認視窗"
     },
     "quityesno": {
-        "message": "在切換為設定檔\"%s\"之前要先關閉目前使用的設定檔嗎?"
+        "message": "您想在切换之前关闭活动配置文件吗？"
     },
     "quityesno2": {
-        "message": "啟動設定檔管理員之前要先關閉目前使用的設定檔嗎?"
+        "message": "您想在启动配置文件管理器之前关闭活动配置文件吗？"
     },
     "red": {
         "message": "紅色"

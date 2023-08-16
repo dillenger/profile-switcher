@@ -7,6 +7,9 @@ Use menu typed action button.
 3.1
 Moved the toolbar button to the Unified Toolbar.
 Fixed the statusbar button appearance.
+Fixed the toolbar button appearance.
+Removed some obsolete code.
+Set maximum version to Thunderbird 118.*.
 
 3.0
 Supernova update, moved the toolbar button to the Tab Bar.
