@@ -107,7 +107,7 @@ function savePrefs() {
   }
 
   prefs.setBoolPref("extensions.profileswitcher.onload_reset_noremote", document.getElementById("no_remote").checked);
-  prefs.setIntPref("extensions.profileswitcher.close_before_launch", document.getElementById("actionlist").selectedIndex);
+  prefs.setIntPref("extensions.profileswitcher.close_before_launch", document.getElementById("actionlist").selectedItem.value);
   var whereValue = document.getElementById("titlebar").checked;
   if (whereValue)
     prefs.setIntPref("extensions.profileswitcher.where_show_name", 0);
