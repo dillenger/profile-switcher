@@ -216,7 +216,7 @@
         "message": "启动另一个配置文件"
     },
     "titleBar": {
-        "message": "在标题栏"
+        "message": "在工具列按鈕上"
     },
     "unknownos": {
         "message": "不能遵从：正在运转的系统不支持"

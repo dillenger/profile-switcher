@@ -216,7 +216,7 @@
         "message": "Lancer un nouveau profil"
     },
     "titleBar": {
-        "message": "Dans la barre de titre"
+        "message": "Sur le bouton de la barre d'outils"
     },
     "unknownos": {
         "message": "Requête impossible à satisfaire : votre système d'exploitation n'est pas pris en charge"
