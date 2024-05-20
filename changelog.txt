@@ -3,6 +3,7 @@ Changelog for Profile Switcher
 3.2
 Move code into dedicated Experiments.
 Use menu typed action button.
+Replaced XPCOMUtils.defineLazyGetter with ChromeUtils.defineLazyGetter.
 
 3.1
 Moved the toolbar button to the Unified Toolbar.
