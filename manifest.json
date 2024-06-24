@@ -33,8 +33,8 @@
     }
   },
   "browser_action": {
-    "default_label": "Loading...",
-    "default_title": "Current profile",
+    "default_label": "__MSG_extName__",
+    "default_title": "__MSG_extDesc__",
     "default_icon": "chrome/content/skin/icons/button0.png",
     "allowed_spaces": []
   },

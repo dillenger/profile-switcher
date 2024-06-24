@@ -54,11 +54,12 @@ async function updateIcons() {
 
 // Update the label of the action button (and the statusbar, if important).
 async function updateLabels() {
-  // Title, now label of button
+  // Title, now tooltip, and label of button
+  let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
+  let profile = profiles.find(p => p.id == profileIdInUse);
+  await browser.browserAction.setTitle({ title: profile.name });
   var whereShow = await browser.LegacyPrefs.getPref("extensions.profileswitcher.where_show_name");
   if (whereShow == 0) {
-    let { profiles, profileIdInUse } = await getSortedProfileDataFromStorage();
-    let profile = profiles.find(p => p.id == profileIdInUse);
     await browser.browserAction.setLabel({ label: profile.name });
   } else {
     await browser.browserAction.setLabel({ label: "" });
