@@ -1,9 +1,13 @@
 Changelog for Profile Switcher
 
 3.2
-Move code into dedicated Experiments.
+Moved code into dedicated Experiments.
 Use menu typed action button.
 Replaced XPCOMUtils.defineLazyGetter with ChromeUtils.defineLazyGetter.
+The statusbar button was removed, it may be added back later.
+Alphabetical sorting of profiles currently doesn't work everywhere.
+Set minimum version to Thunderbird 115.0.
+Set maximum version to Thunderbird 130.*.
 
 3.1
 Moved the toolbar button to the Unified Toolbar.
