@@ -267,7 +267,6 @@ async function init() {
     }
   })
 
-
   // TODO - We need this only for the options page and the logDialog, which are still XHTML.
   //  - Convert settings.xhtml to HTML and use the options_ui manifest entry to hook
   //    it into the add-on manager.
@@ -297,6 +296,11 @@ async function init() {
     ["locale", "profilelauncher", "zh-TW", "chrome/locale/zh-TW/profilelauncher/"]
   ]);
   messenger.WindowListener.registerOptionsPage("chrome://profilelauncher/content/settings.xhtml");
+
+  messenger.WindowListener.registerWindow(
+    "chrome://messenger/content/messenger.xhtml", "chrome/content/messenger.js"
+  );
+  messenger.WindowListener.startListening();
 }
 
 init();
