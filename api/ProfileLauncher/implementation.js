@@ -171,7 +171,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
 
         openOptions: function () {
           let mainWindow = Services.wm.getMostRecentWindow("mail:3pane");
-          mainWindow.open("chrome://profilelauncher/content/settings.xhtml", "", "chrome=yes,modal=yes,centerscreen=yes");
+          mainWindow.openDialog("chrome://profilelauncher/content/settings.xhtml", "chrome");
         },
 
         resetMozNoRemote() {

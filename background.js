@@ -107,9 +107,9 @@ async function updateMenuEntries() {
     {
       id: "openAboutProfiles",
     },
-    {
-      id: "restartWithLog"
-    },
+    //{
+      //id: "restartWithLog"
+    //},
     {
       id: "sep_main",
       separator: true

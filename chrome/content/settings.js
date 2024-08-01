@@ -90,7 +90,7 @@ function initPanel() {
 
 async function pickFile(el) {
   let fp = Cc["@mozilla.org/filepicker;1"].createInstance(Ci.nsIFilePicker);
-  fp.init(window, "", Ci.nsIFilePicker.modeOpen);
+  fp.init(window.browsingContext, "", Ci.nsIFilePicker.modeOpen);
   fp.appendFilters(Ci.nsIFilePicker.filterAll);
 
   let res = await new Promise(resolve => {
