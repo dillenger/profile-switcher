@@ -8,8 +8,8 @@ Profiles made with higher versions of Thunderbird than the one you are using can
 Profiles made with lower versions of Thunderbird than the one you are using can be used but will be upgraded to the version you are currently using.
 It is very easy to inadvertently upgrade a profile with this extension.
 
-IThe add-on adds new items the to the Tools menu to start another profile or the profile manager.
-The same is provided on a toolbar button you can put on the main toolbar.
+The add-on adds new items the to the Tools menu to start another profile or the profile manager.
+The menu is also provided on a toolbar button you can put on the main toolbar.
 
 From the extension's preferences, you can choose what to do when you launch another profile, close the profile in use or don't.
 If you choose to run the profile manager in safe-mode, the current profile will always be closed).
