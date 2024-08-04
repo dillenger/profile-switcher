@@ -4,6 +4,7 @@ Changelog for Profile Switcher
 Fixed "sticky" icon color and profile dropdowns in Options.
 Fixed the file picker for the executable file in Options.
 Temporarily disabled Restart with log, needs some bug fixing.
+Set minimum version to Thunderbird 125.0.
 
 3.3
 Moved code into dedicated Experiments.

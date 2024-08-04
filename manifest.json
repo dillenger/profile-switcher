@@ -54,7 +54,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "pswitcher2@dillinger",
-      "strict_min_version": "115.0",
+      "strict_min_version": "125.0",
       "strict_max_version": "130.*"
     }
   },

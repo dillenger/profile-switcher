@@ -171,7 +171,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
 
         openOptions: function () {
           let mainWindow = Services.wm.getMostRecentWindow("mail:3pane");
-          mainWindow.openDialog("chrome://profilelauncher/content/settings.xhtml", "chrome");
+          mainWindow.openDialog("chrome://profilelauncher/content/settings.xhtml", "", "chrome,centerscreen");
         },
 
         resetMozNoRemote() {
@@ -183,7 +183,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
           let mainWindow = Services.wm.getMostRecentWindow("mail:3pane");
           let param = {};
           param.abort = true;
-          mainWindow.openDialog("chrome://profilelauncher/content/logDialog.xhtml", "", "chrome,modal,centerscreen", param);
+          mainWindow.openDialog("chrome://profilelauncher/content/logDialog.xhtml", "", "chrome,centerscreen", param);
           if (param.abort)
             return;
           let type = "";
