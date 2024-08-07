@@ -1,5 +1,8 @@
 Changelog for Profile Switcher
 
+3.5
+Close all open windows when switching profiles, not just the current (main) window.
+
 3.4
 Fixed "sticky" icon color and profile dropdowns in Options.
 Fixed the file picker for the executable file in Options.

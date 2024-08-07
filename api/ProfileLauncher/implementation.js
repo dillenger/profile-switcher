@@ -278,7 +278,8 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
             } else {
               process.run(false, args, args.length);
             }
-            mainWindow.setTimeout(function () { mainWindow.close() }, quitDelay);
+            //mainWindow.setTimeout(function () { mainWindow.close() }, quitDelay);
+            mainWindow.setTimeout(function () { Services.startup.quit(Ci.nsIAppStartup.eAttemptQuit) }, quitDelay);
           } else {
             process.run(false, args, args.length);
           }
