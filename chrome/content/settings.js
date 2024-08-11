@@ -1,4 +1,4 @@
-const { ExtensionParent } = ChromeUtils.import("resource://gre/modules/ExtensionParent.jsm");
+const { ExtensionParent } = ChromeUtils.importESModule("resource://gre/modules/ExtensionParent.sys.mjs");
 const extension = ExtensionParent.GlobalManager.getExtension("pswitcher2@dillinger");
 
 var PS_converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]

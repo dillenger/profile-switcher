@@ -55,7 +55,7 @@
     "gecko": {
       "id": "pswitcher2@dillinger",
       "strict_min_version": "125.0",
-      "strict_max_version": "130.*"
+      "strict_max_version": "131.*"
     }
   },
   "icons": {
