@@ -3,6 +3,7 @@ Changelog for Profile Switcher
 3.5
 Close all open windows when switching, not just the main window.
 ESMified the add-on.
+Set maximum version to Thunderbird 131.*.
 
 3.4
 Fixed "sticky" icon color and profile dropdowns in Options.
