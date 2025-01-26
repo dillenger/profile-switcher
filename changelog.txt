@@ -1,5 +1,9 @@
 Changelog for Profile Switcher
 
+3.6
+Set minimum version to Thunderbird 128.0.
+Set maximum version to Thunderbird 136.*.
+
 3.5
 Close all open windows when switching, not just the main window.
 ESMified the add-on.
