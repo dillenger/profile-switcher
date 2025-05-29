@@ -140,4 +140,5 @@ function savePrefs() {
   }
 
   prefs.setStringPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);
+  //profileButtonLaunch = PS_converter.ConvertToUnicode(profileButtonLaunch);
 }
