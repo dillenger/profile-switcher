@@ -43,6 +43,7 @@ function initPanel() {
   var sel = null;
   for (var i = 0; i < profilesList.length; i++) {
     var el = profilePopup.appendItem(convToUnicode(profilesList[i]), profilesList[i]);
+    console.debug(el);
     if (profile_in_use == profilesList[i])
       el.setAttribute("disabled", "true");
     else if (profileButtonLaunch == profilesList[i])
@@ -134,9 +135,9 @@ function savePrefs() {
       shortcut = shortcut + " alt";
     if (document.getElementById("PMcontrol").checked)
       shortcut = shortcut + " accel";
-    prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", shortcut);
+    prefs.setStringPref("extensions.profileswitcher.profile_manager_shortcut", shortcut);
   } else {
-    prefs.setCharPref("extensions.profileswitcher.profile_manager_shortcut", "");
+    prefs.setStringPref("extensions.profileswitcher.profile_manager_shortcut", "");
   }
 
   prefs.setStringPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);

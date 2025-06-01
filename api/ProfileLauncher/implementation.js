@@ -422,7 +422,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
           // We keep setting these prefs only for the settings window to be able
           // to access them. Once the settings window is html and can access
           // local storage, this can be removed
-          prefs.setCharPref("extensions.profileswitcher.profile.in_use", profiles.find(e => e.id == profileIdInUse).name);
+          prefs.setStringPref("extensions.profileswitcher.profile.in_use", profiles.find(e => e.id == profileIdInUse).name);
           prefs.setStringPref("extensions.profileswitcher.profiles.list", profiles.map(e => e.name).join(",,,"));
           return { profileIdInUse, profiles };
         }
