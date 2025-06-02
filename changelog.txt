@@ -1,7 +1,7 @@
 Changelog for Profile Switcher
 
 3.7
-Fixed ESModules unloading (and cache flushing).
+Fixed ESModules unloading (and cache flushing) in WindowListener.
 Fixed support for Unicode in profile names.
 Set maximum version to Thunderbird 140.*.
 

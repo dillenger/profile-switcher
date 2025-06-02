@@ -36,6 +36,9 @@ function initPanel() {
 
   var profile_in_use = prefs.getStringPref("extensions.profileswitcher.profile.in_use","");
   var profilesListPref = prefs.getStringPref("extensions.profileswitcher.profiles.list","");
+  // On Linux, convert the profiles list from Unicode
+  if (getOS().indexOf("linux") > -1)
+    profilesListPref = PS_converter.ConvertFromUnicode(profilesListPref);
   var profileButtonLaunch = prefs.getStringPref("extensions.profileswitcher.profile.button_launch","");
   var profilesList = profilesListPref.split(",,,");
 
@@ -43,7 +46,6 @@ function initPanel() {
   var sel = null;
   for (var i = 0; i < profilesList.length; i++) {
     var el = profilePopup.appendItem(convToUnicode(profilesList[i]), profilesList[i]);
-    console.debug(el);
     if (profile_in_use == profilesList[i])
       el.setAttribute("disabled", "true");
     else if (profileButtonLaunch == profilesList[i])
@@ -141,5 +143,4 @@ function savePrefs() {
   }
 
   prefs.setStringPref("extensions.profileswitcher.profile.button_launch", document.getElementById("profiles").selectedItem.value);
-  //profileButtonLaunch = PS_converter.ConvertToUnicode(profileButtonLaunch);
 }

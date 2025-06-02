@@ -346,9 +346,7 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
               if (myline && myline.startsWith("Name=")) {
                 currentName = myline.substring(5);
                 // Convert the profile's name to Unicode
-                console.debug(currentName);
                 currentName = converter.ConvertToUnicode(currentName);
-                console.debug(currentName);
                 continue;
               }
 
@@ -367,8 +365,6 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                   // the native-charset will be used to launch the command
                   // and the Unicode one to match "profdirfullpath" var
                   var mylineUNICODE = converter.ConvertToUnicode(myline);
-                  console.debug(myline);
-                  console.debug(mylineUNICODE);
                 }
                 catch (e) {
                   var mylineUNICODE = myline;
@@ -386,7 +382,6 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                     var regex = new RegExp(profdirname + "[\\x00-\\x1F]", "gi");
                     if (decodedpath && regex.test(decodedpath)) {
                       profileIdInUse = currentId;
-                      console.debug(currentId);
                     }
                     currentPath = decodedpath;
                   }
@@ -396,17 +391,11 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
                 // because otherwise it could fail
                 else if (!isRelative && mylineUNICODE == ("Path=" + profdirfullpath)) {
                   profileIdInUse = currentId;
-                  console.debug(currentId);
                 }
                 // Normal case with relative path on every os
                 // If the profile's directory is at the end of the line beginning with Path=, we've found the right name
                 else if (isRelative && profRegExp.test(mylineUNICODE)) {
                   profileIdInUse = currentId;
-                  console.debug(currentId);
-                  // Convert the profile's name to Unicode
-                  //console.debug(currentName);
-                  //currentName = converter.ConvertToUnicode(currentName);
-                  //console.debug(currentName);
                 }
               }
             }
