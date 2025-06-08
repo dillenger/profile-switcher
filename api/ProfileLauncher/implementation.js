@@ -10,6 +10,7 @@ var { ExtensionUtils } = ChromeUtils.importESModule(
 );
 var { ExtensionError } = ExtensionUtils;
 
+var navigator = Services.wm.getMostRecentWindow("mail:3pane").navigator;
 var prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch);
 var env = Cc["@mozilla.org/process/environment;1"].getService(Ci.nsIEnvironment);
 var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]
@@ -229,6 +230,15 @@ var ProfileLauncher = class extends ExtensionCommon.ExtensionAPI {
 
           if (profile && prefs.getCharPref("extensions.profileswitcher.arguments_charset"))
             profile = convert(profile);
+
+          // Use the native-charset profile name on Linux, unicode won't work here.
+          if (getOS().indexOf("linux") > -1) {
+            try {
+              profile = converter.ConvertToUnicode(profile);
+            }
+            catch (e) {}
+            profile = converter.ConvertFromUnicode(profile);
+          }
 
           let quit;
           if (safemode) {
