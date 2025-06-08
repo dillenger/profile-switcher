@@ -36,9 +36,6 @@ function initPanel() {
 
   var profile_in_use = prefs.getStringPref("extensions.profileswitcher.profile.in_use","");
   var profilesListPref = prefs.getStringPref("extensions.profileswitcher.profiles.list","");
-  // On Linux, convert the profiles list from Unicode
-  if (getOS().indexOf("linux") > -1)
-    profilesListPref = PS_converter.ConvertFromUnicode(profilesListPref);
   var profileButtonLaunch = prefs.getStringPref("extensions.profileswitcher.profile.button_launch","");
   var profilesList = profilesListPref.split(",,,");
 
